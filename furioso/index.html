@@ -239,39 +239,39 @@
                 <span class="sub-title-part">(io rivendico il mare)</span>
             </h2>
             <div class="artist-name">arnaldo furioso</div>
-            <!-- Modificati i link per tentare il deep linking con fallback JavaScript -->
-            <a href="https://www.youtube.com/@ArnaldoFurioso?sub_confirmation=1" data-app-url="youtube://channel/UCMwss_ZJWPMgh66DLlvwrUw" class="button-link deep-link">
+            <!-- Links normali aperti in una nuova scheda -->
+            <a href="https://www.youtube.com/@ArnaldoFurioso?sub_confirmation=1" target="_blank" class="button-link">
                 <img src="img/youtube.png" alt="YouTube Logo">
                 YouTube Video
             </a>
-            <a href="https://open.spotify.com/intl-it/artist/2jrGyOMUhLBczGbgvh6MgL" data-app-url="spotify://artist/2jrGyOMUhLBczGbgvh6MgL" class="button-link deep-link">
+            <a href="https://open.spotify.com/intl-it/artist/2jrGyOMUhLBczGbgvh6MgL" target="_blank" class="button-link">
                 <img src="img/spotify.png" alt="Spotify Logo">
                 Spotify
             </a>
-            <a href="https://www.instagram.com/arnaldofurioso" data-app-url="instagram://user?username=arnaldofurioso" class="button-link deep-link">
+            <a href="https://www.instagram.com/arnaldofurioso" target="_blank" class="button-link">
                 <img src="img/instagram.png" alt="Instagram Logo">
                 Instagram
             </a>
-            <a href="https://music.apple.com/it/artist/arnaldo-furioso/1750937018" data-app-url="itunes://artist/1750937018" class="button-link deep-link">
+            <a href="https://music.apple.com/it/artist/arnaldo-furioso/1750937018" target="_blank" class="button-link">
                 <img src="img/apple.png" alt="Apple Music Logo">
                 Apple Music
             </a>
-            <a href="https://music.amazon.com/artists/B0D6H7PW2H/arnaldo-furioso/discography" data-app-url="amazonmusic://artist/B0D6H7PW2H" class="button-link deep-link">
+            <a href="https://music.amazon.com/artists/B0D6H7PW2H/arnaldo-furioso/discography" target="_blank" class="button-link">
                 <img src="img/amazon.png" alt="Amazon Music Logo">
                 Amazon Music
             </a>
 
             <div class="social-icons-container">
-                <a href="https://www.tiktok.com/@arnaldofurioso" data-app-url="tiktok://user/profile/@arnaldofurioso" class="social-icon-link deep-link">
+                <a href="https://www.tiktok.com/@arnaldofurioso" target="_blank">
                     <img src="img/tiktok.png" alt="TikTok Logo">
                 </a>
-                <a href="https://www.facebook.com/arnaldoguido" data-app-url="fb://profile/104005129318388" class="social-icon-link deep-link">
+                <a href="https://www.facebook.com/arnaldoguido" target="_blank">
                     <img src="img/facebook.png" alt="Facebook Logo">
                 </a>
-                <a href="https://www.instagram.com/arnaldofurioso" data-app-url="instagram://user?username=arnaldofurioso" class="social-icon-link deep-link">
+                <a href="https://www.instagram.com/arnaldofurioso" target="_blank">
                     <img src="img/instagram.png" alt="Instagram Logo">
                 </a>
-                <a href="https://t.me/arnaldofurioso" data-app-url="tg://resolve?domain=arnaldofurioso" class="social-icon-link deep-link">
+                <a href="https://t.me/arnaldofurioso" target="_blank">
                     <img src="img/telegram.png" alt="Telegram Logo">
                 </a>
             </div>
@@ -279,36 +279,5 @@
             <div class="copyright">© 2025 Qanto Group Srl<br/>Pirames International Srl</div>
         </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const deepLinks = document.querySelectorAll('.deep-link');
-
-            // Semplice controllo per distinguere mobile da desktop. Non è infallibile ma efficace per la maggior parte dei casi.
-            const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-
-            deepLinks.forEach(link => {
-                link.addEventListener('click', function(event) {
-                    event.preventDefault(); // Previene l'apertura immediata dell'href
-
-                    const appUrl = this.getAttribute('data-app-url');
-                    const webUrl = this.getAttribute('href');
-
-                    if (isMobile) {
-                        // Su mobile, prova prima il deep link, poi il fallback web con un piccolo ritardo
-                        window.location.href = appUrl;
-                        setTimeout(() => {
-                            // Se l'app non si è aperta, apri l'URL web
-                            window.open(webUrl, '_blank');
-                        }, 750); // Ritardo per dare tempo all'app di avviarsi
-                    } else {
-                        // Su desktop, i deep link non funzionano come previsto, quindi apri direttamente l'URL web.
-                        // Questo evita errori nella console e blocchi indesiderati.
-                        window.open(webUrl, '_blank');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
