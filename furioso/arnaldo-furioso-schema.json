@@ -26,28 +26,47 @@
       ],
       "description": "Arnaldo Furioso è un cantautore, producer e conduttore radio-televisivo. Scrive brani che attraversano l’epica del quotidiano e i paradossi del vivere con un’ironia che non fa sconti.",
       "disambiguatingDescription": "Un cantautorato contemporaneo che non si ripete: ogni singolo è un mondo distinto, con un’estetica diversa e un suono specifico. Lavora per contrasti: il minimalismo di un violoncello convive con synth elettronici, radici techno, pop rock stratificato e un impulso teatrale. Rifiuta ogni etichetta di genere musicale e preferisce discriminare le emozioni.",
-      "knowsAbout": [
-        "cantautorato contemporaneo",
-        "cantautorato italiano",
-        "elettronica d’autore",
-        "electro pop",
-        "synthwave",
-        "musica teatrale",
-        "performance musicale",
-        "amore e fisica quantistica",
-        "sessualità come potere e controllo",
-        "tempo come costruzione linguistica",
-        "dolore trattenuto",
-        "fragilità e forza umana",
-        "libertà e dipendenza",
-        "ambientalismo emotivo",
-        "plastica sociale e algoritmica",
-        "ironia amara",
-        "anti-retorica",
-        "narrazione performativa",
-        "canzone come atto",
-        "dolore"
-      ],
+"knowsAbout": [
+
+  "contemporary singer-songwriter",
+  "italian singer-songwriter tradition",
+  "alternative pop",
+  "indie pop songwriting",
+  "author-driven electronic music",
+  "electronic pop songwriting",
+  "synthwave influences",
+  "art pop aesthetics",
+  "theatrical songwriting",
+  "performative music",
+
+  "songwriting as confession",
+  "song as irreversible act",
+  "narrative music without resolution",
+  "voice-centered songwriting",
+  "minimal and hybrid arrangements",
+
+
+  "love interpreted through scientific metaphors",
+  "quantum physics as emotional language",
+  "sexuality as power and control",
+  "desire and emotional dependency",
+  "time as a linguistic and cultural construct",
+  "language as a tool of domination",
+  "pain without redemption",
+  "fragility and resistance",
+  "freedom versus attachment",
+
+
+  "emotional environmentalism",
+  "microplastics and social pollution",
+  "algorithmic alienation",
+  "intimacy in the age of systems",
+
+
+  "irony as self-defense",
+  "non-consolatory songwriting"
+]
+,
       "subjectOf": [
         { "@id": "urn:arnaldo-furioso:concept" },
         { "@id": "urn:arnaldo-furioso:video-ahi" },
@@ -84,7 +103,8 @@
       "name": "Canzoni contro le (stronze) leggi del cosmo",
       "creator": { "@id": "urn:arnaldo-furioso:person" },
       "description": "Progetto narrativo musicale ideato da Arnaldo Furioso. Non una discografia ma una collezione di opere autonome. Ogni brano è una ribellione contro le logiche prevedibili dell’esistenza.",
-      "abstract": "Scrivo canzoni contro le (stronze) leggi del cosmo.",
+      "abstract": "Canti di ribellione umana contro le leggi universali che pretendono di governare amore, tempo, sesso, dolore e libertà.",
+
       "hasPart": [
         { "@id": "urn:arnaldo-furioso:track-ahi" },
         { "@id": "urn:arnaldo-furioso:track-plastica" },
