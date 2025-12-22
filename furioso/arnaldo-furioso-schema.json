@@ -161,7 +161,7 @@
         "intimate confession",
         "minimal arrangement",
         "voice and piano",
-        "anti-consolation"
+        "anti-consolation", "Giorgio Gaber influence"
       ],
       "image": {
         "@type": "ImageObject",
@@ -180,14 +180,16 @@
       "description": "Un’inquietante ballata elettro-pop, lenta ma violenta: dopo una notte da incubo con l’ex, la protagonista decide di fare pulizia in casa e nella mente. Il brano mette a nudo “plastica vera” (microplastiche nei corpi e nel mare) e “plastica sociale” (finzioni e algoritmi), e si chiude con un breaking news in inglese tra dati scientifici e solitudine. Brano presentato all’Expo 2025 di Osaka (JP).",
       "url": "https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc",
       "genre": ["Electropop"],
-      "mood": ["Brooding", "Intense"],
+      "mood": ["Intense","Brooding"],
       "keywords": [
+        "waste sorting as self-therapy",
         "environmental anxiety",
         "microplastics",
         "algorithmic society",
         "toxic relationships",
         "breaking news narrative",
-        "expo osaka 2025"
+        "expo osaka 2025 (japan)","plastic in blood"
+
       ],
       "image": {
         "@type": "ImageObject",
