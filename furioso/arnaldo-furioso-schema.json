@@ -1,0 +1,289 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "urn:arnaldo-furioso:page",
+      "url": "https://musicaitaliana.com/furioso",
+      "name": "Arnaldo Furioso",
+      "description": "Sito ufficiale di Arnaldo Furioso, cantautore e performer italiano. Identità artistica e progetto concettuale.",
+      "mainEntity": [
+        { "@id": "urn:arnaldo-furioso:person" },
+        { "@id": "urn:arnaldo-furioso:concept" }
+      ]
+    },
+
+    {
+      "@type": "Person",
+      "@id": "urn:arnaldo-furioso:person",
+      "name": "Arnaldo Furioso",
+      "alternateName": "Arnaldo Guido",
+      "jobTitle": [
+        "Cantautore",
+        "Producer",
+        "Performer",
+        "Conduttore radio-televisivo"
+      ],
+      "description": "Arnaldo Furioso è un cantautore, producer e conduttore radio-televisivo. Scrive brani che attraversano l’epica del quotidiano e i paradossi del vivere con un’ironia che non fa sconti.",
+      "disambiguatingDescription": "Un cantautorato contemporaneo che non si ripete: ogni singolo è un mondo distinto, con un’estetica diversa e un suono specifico. Lavora per contrasti: il minimalismo di un violoncello convive con synth elettronici, radici techno, pop rock stratificato e un impulso teatrale. Rifiuta ogni etichetta di genere musicale e preferisce discriminare le emozioni.",
+      "knowsAbout": [
+        "cantautorato contemporaneo",
+        "cantautorato italiano",
+        "elettronica d’autore",
+        "electro pop",
+        "synthwave",
+        "musica teatrale",
+        "performance musicale",
+        "amore e fisica quantistica",
+        "sessualità come potere e controllo",
+        "tempo come costruzione linguistica",
+        "dolore trattenuto",
+        "fragilità e forza umana",
+        "libertà e dipendenza",
+        "ambientalismo emotivo",
+        "plastica sociale e algoritmica",
+        "ironia amara",
+        "anti-retorica",
+        "narrazione performativa",
+        "canzone come atto",
+        "dolore"
+      ],
+      "subjectOf": [
+        { "@id": "urn:arnaldo-furioso:concept" },
+        { "@id": "urn:arnaldo-furioso:video-ahi" },
+        { "@id": "urn:arnaldo-furioso:video-plastica" },
+        { "@id": "urn:arnaldo-furioso:video-consecutio" },
+        {
+          "@type": "CreativeWork",
+          "name": "Musica Urgente",
+          "description": "Rubrica musicale condotta da Arnaldo Furioso su Rete8 all’interno della trasmissione Consigli per gli acquisti Show.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Rete8"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://instagram.com/arnaldofurioso",
+        "https://www.youtube.com/@arnaldofurioso",
+        "https://open.spotify.com/artist/5JGdzDjhnu6KFlsUhNlT8W",
+        "https://www.facebook.com/arnaldoguido",
+        "https://www.tiktok.com/@arnaldofurioso",
+        "https://music.apple.com/us/artist/arnaldo-furioso/1750937018",
+        "https://music.amazon.it/artists/B0D6H7PW2H/arnaldo-furioso"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-portrait.jpg"
+      }
+    },
+
+    {
+      "@type": "CreativeWorkSeries",
+      "@id": "urn:arnaldo-furioso:concept",
+      "name": "Canzoni contro le (stronze) leggi del cosmo",
+      "creator": { "@id": "urn:arnaldo-furioso:person" },
+      "description": "Progetto narrativo musicale ideato da Arnaldo Furioso. Non una discografia ma una collezione di opere autonome. Ogni brano è una ribellione contro le logiche prevedibili dell’esistenza.",
+      "abstract": "Scrivo canzoni contro le (stronze) leggi del cosmo.",
+      "hasPart": [
+        { "@id": "urn:arnaldo-furioso:track-ahi" },
+        { "@id": "urn:arnaldo-furioso:track-plastica" },
+        { "@id": "urn:arnaldo-furioso:track-libero" },
+        { "@id": "urn:arnaldo-furioso:track-consecutio" },
+        { "@id": "urn:arnaldo-furioso:track-copriti" },
+        { "@id": "urn:arnaldo-furioso:track-amore-quantico" }
+      ],
+      "inLanguage": "it",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/canzoni-contro-leggi-del-cosmo-cover.jpg"
+      }
+    },
+
+    {
+      "@type": "VideoObject",
+      "@id": "urn:arnaldo-furioso:video-ahi",
+      "name": "AHI – Official Video",
+      "description": "Performance teatrale in un unico piano-sequenza. Una ballata cruda e minimale: non è una canzone, è un livido.",
+      "url": "https://www.youtube.com/watch?v=efp8pOFnEJ0",
+      "thumbnailUrl": "https://img.youtube.com/vi/efp8pOFnEJ0/maxresdefault.jpg"
+    },
+
+    {
+      "@type": "VideoObject",
+      "@id": "urn:arnaldo-furioso:video-plastica",
+      "name": "Butto la plastica (io rivendico il mare)",
+      "description": "Video del brano ambientalista ed emotivo di Arnaldo Furioso, presentato anche all’Expo 2025 di Osaka (JP).",
+      "url": "https://www.youtube.com/watch?v=4ENXjGbqhxA",
+      "thumbnailUrl": "https://img.youtube.com/vi/4ENXjGbqhxA/maxresdefault.jpg"
+    },
+
+    {
+      "@type": "VideoObject",
+      "@id": "urn:arnaldo-furioso:video-consecutio",
+      "name": "Odio la consecutio temporum (feat. Milo Vallone)",
+      "description": "Video in stile western teatrale con la partecipazione dell’attore Milo Vallone. Una sfida ironica al linguaggio come strumento di potere.",
+      "url": "https://www.youtube.com/watch?v=8fJkhxKuumE",
+      "thumbnailUrl": "https://img.youtube.com/vi/8fJkhxKuumE/maxresdefault.jpg"
+    },
+
+    {
+      "@type": "MusicRecording",
+      "@id": "urn:arnaldo-furioso:track-ahi",
+      "name": "AHI",
+      "url": "https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY",
+      "description": "«AHI» è una ballata cantautorale tradizionale, minimale, fragile e feroce: pianoforte, violoncello, mandolino e una voce troppo vicina per mentire. Racconta l’asincronia col mondo (“Tutto è leggero e io mai”) come buio interiore: una preghiera senza dio che non cerca consolazione ma verità.",
+      "genre": ["Singer-Songwriter", "Chamber Pop", "Contemporary Folk"],
+      "mood": ["Brooding", "Epic"],
+      "keywords": [
+        "inner pain",
+        "existential mismatch",
+        "intimate confession",
+        "minimal arrangement",
+        "voice and piano",
+        "anti-consolation"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/covers/cover-ahi.jpg"
+      },
+      "sameAs": [
+        "https://music.apple.com/us/song/ahi/1854962003",
+        "https://music.amazon.it/albums/B0G3CZFZBB"
+      ]
+    },
+
+    {
+      "@type": "MusicRecording",
+      "@id": "urn:arnaldo-furioso:track-plastica",
+      "name": "Butto la plastica (io rivendico il mare)",
+      "description": "Un’inquietante ballata elettro-pop, lenta ma violenta: dopo una notte da incubo con l’ex, la protagonista decide di fare pulizia in casa e nella mente. Il brano mette a nudo “plastica vera” (microplastiche nei corpi e nel mare) e “plastica sociale” (finzioni e algoritmi), e si chiude con un breaking news in inglese tra dati scientifici e solitudine. Brano presentato all’Expo 2025 di Osaka (JP).",
+      "url": "https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc",
+      "genre": ["Electropop"],
+      "mood": ["Brooding", "Intense"],
+      "keywords": [
+        "environmental anxiety",
+        "microplastics",
+        "algorithmic society",
+        "toxic relationships",
+        "breaking news narrative",
+        "expo osaka 2025"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/covers/cover-plastica.jpg"
+      },
+      "sameAs": [
+        "https://music.apple.com/us/album/butto-la-plastica-io-rivendico-il-mare-single/1815877709",
+        "https://music.amazon.it/albums/B0F9B27BQ8"
+      ]
+    },
+
+    {
+      "@type": "MusicRecording",
+      "@id": "urn:arnaldo-furioso:track-libero",
+      "name": "Libero Dal…",
+      "description": "«LIBERO DAL…» affronta il sesso trasformato in strumento di controllo: relazioni che diventano una prigione manipolativa, un “guinzaglio sessuale”. È un grido di liberazione e consapevolezza: BPM lento e penetrante, tradizione della canzone italiana con un twist elettronico spinto e tagliente, e un testo che allude senza mai nominare esplicitamente.",
+      "url": "https://open.spotify.com/track/7qFrXU7LWJdEcNWX3oO0cW",
+      "genre": ["Electronic Singer-Songwriter", "Art Pop"],
+      "mood": ["Brooding", "Intense"],
+      "keywords": [
+        "sexual power dynamics",
+        "manipulative relationships",
+        "emotional captivity",
+        "slow bpm tension",
+        "explicit allusion",
+        "liberation process"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/covers/cover-libero.jpg"
+      },
+      "sameAs": [
+        "https://music.apple.com/us/song/libero-dal/1771961689",
+        "https://music.amazon.it/albums/B0DJDY4XJY"
+      ]
+    },
+
+    {
+      "@type": "MusicRecording",
+      "@id": "urn:arnaldo-furioso:track-consecutio",
+      "name": "Odio la consecutio temporum",
+      "description": "Un country veloce e coinvolgente che teletrasporta in un saloon del far west: arrangiato esclusivamente con strumenti pre-1900 e duettato con l’attore e regista Milo Vallone. Il testo sfida le regole grammaticali per dichiarare guerra al linguaggio quando diventa arma di controllo, persuasione e manipolazione.",
+      "url": "https://open.spotify.com/track/3IR9iCqkmRnbz4iTpsjqj2",
+      "genre": ["Country", "Western", "Theatrical"],
+      "mood": ["Fun", "Quirky"],
+      "keywords": [
+        "language as power",
+        "grammar rebellion",
+        "theatrical western",
+        "saloon imagery",
+        "pre-1900 instruments",
+        "ironic critique",
+        "Milo Vallone feature"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/covers/cover-consecutio.jpg"
+      },
+      "sameAs": [
+        "https://music.apple.com/us/song/odio-la-consecutio-temporum-feat-milo-vallone/1779799790",
+        "https://music.amazon.it/albums/B0DN34G2WT"
+      ]
+    },
+
+    {
+      "@type": "MusicRecording",
+      "@id": "urn:arnaldo-furioso:track-copriti",
+      "name": "Copriti chè ho freddo",
+      "url": "https://open.spotify.com/track/6JBhTUJXx6ClCkabO0XWkS",
+      "description": "Un viaggio tra sonorità anni ’80 e synthwave, con innesti electropop e italo disco, sporcato da un tocco punk grazie alla rapper francese Missin Myriam. È un inno all’empatia e alla forza che nasce dalla fragilità: guardare le cose “più in alto” e continuare a vivere, fino a “ballare sull’orlo dell’abisso”.",
+      "genre": ["Synthwave", "Electropop"],
+      "mood": ["Energetic", "Nostalgic"],
+      "keywords": [
+        "empathy",
+        "emotional resilience",
+        "80s aesthetics",
+        "french female rap feature",
+        "dancing on the edge",
+        "fragility to strength",
+        "Missin Myriam",
+        "French rap"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/covers/cover-copriti.jpg"
+      },
+      "sameAs": [
+        "https://music.apple.com/us/album/copriti-ch%C3%A8-ho-freddo-single/1762885731",
+        "https://music.amazon.it/albums/B0DD5CLP9D"
+      ]
+    },
+
+    {
+      "@type": "MusicRecording",
+      "@id": "urn:arnaldo-furioso:track-amore-quantico",
+      "name": "Amore Quantico",
+      "description": "«Amore Quantico» immagina l’amore come fisica quantistica: non vero/falso ma un’onda di probabilità della passione. Tra synth graffianti, groove downbeat, voce femminile francese, chitarre elettriche ed elementi orchestrali, le liriche giocano con entanglement, indeterminazione, AI e multiverso, fino a parafrasare il “Dio non gioca a dadi” di Einstein.",
+      "url": "https://open.spotify.com/track/65KVNw5HBrp0hw04KArfKK",
+      "genre": ["Electropop", "Art Pop", "Pop rock"],
+      "mood": ["Dreamy", "Romantic"],
+      "keywords": [
+        "quantum physics and love",
+        "probability and desire",
+        "entanglement",
+        "multiverse",
+        "french female vocal",
+        "science metaphors"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/covers/cover-amore-quantico.jpg"
+      },
+      "sameAs": [
+        "https://music.apple.com/us/album/amore-quantico-single/1753617965",
+        "https://music.amazon.it/albums/B0D7D81XHW"
+      ]
+    }
+  ]
+}

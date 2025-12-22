@@ -1,303 +1,254 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arnaldo Furioso - Butto la plastica (io rivendico il mare)</title>
-    
-    <!-- Meta Tags per le Immagini di Preview (Open Graph, Twitter Cards, etc.) -->
-    <!-- Open Graph Tags (per Facebook, LinkedIn, WhatsApp, Telegram, etc.) -->
-    <meta property="og:title" content="Arnaldo Furioso - Butto la plastica (io rivendico il mare)">
-    <meta property="og:description" content="Arnaldo Furioso - Butto la plastica (io rivendico il mare) su tutte le piattaforme digitali.">
-    <meta property="og:image" content="https://musicaitaliana.com/furioso/imgmeta/og-square-image600.jpg"> <!-- Immagine quadrata per OG -->
-    <meta property="og:image:width" content="600"> <!-- Larghezza immagine quadrata 600-->
-    <meta property="og:image:height" content="600"> <!-- Altezza immagine quadrata -->
-    <meta property="og:type" content="music.song">
-    <meta property="og:url" content="https://musicaitaliana.com/furioso/"> <!-- IMPORTANTE: Sostituisci con l'URL EFFETTIVO della tua landing page (es. https://tuo-username.github.io/furioso/) -->
-    <meta property="og:site_name" content="Arnaldo Furioso Official">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnaldo Furioso — AI Knowledge Endpoint</title>
 
-    <!-- Favicon (icona del browser) -->
-    <link rel="icon" href="imgmeta/favicon.ico" type="image/x-icon"> <!-- O .png, .svg -->
-    <link rel="apple-touch-icon" href="imgmeta/apple-touch-icon.png"> <!-- Icona per dispositivi Apple -->
+  <!-- Primary structured data -->
+  <link rel="alternate" type="application/ld+json" href="./arnaldo-furioso-schema.json" />
 
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --fg: #e6e6e6;
+      --muted: #9a9a9a;
+      --accent: #7fffd4;
+      --warning: #ff6b6b;
+      --block: #141414;
+      --border: #2a2a2a;
+    }
 
-    <!-- Caricamento dei font da Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Poppins:wght@700&family=Roboto+Condensed:wght@800&display=swap" rel="stylesheet">
-    <style>
-        /* Stili Globali e Reset */
-        * {
-            box-sizing: border-box; /* Assicura che padding e border siano inclusi nella larghezza/altezza */
-        }
+    * { box-sizing: border-box; }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif; /* Poppins come font di fallback generale */
-            color: #ffffff; /* Colore del testo predefinito bianco */
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      line-height: 1.55;
+    }
 
-            /* Sfondo a pieno schermo, sempre appoggiato a sinistra e non scrollabile */
-            background-image: url('sfondo1800x2400.jpg');
-            background-size: cover; /* Copre l'intero viewport */
-            background-position: left center; /* Appoggia l'immagine a sinistra */
-            background-repeat: no-repeat; /* Non ripete l'immagine */
-            background-attachment: fixed; /* Rende l'immagine non scrollabile */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
 
-            /* Flexbox per il posizionamento del box di contenuto */
-            display: flex;
-            align-items: center; /* Centra verticalmente il box */
-            min-height: 100vh; /* Assicura che il body occupi l'intera altezza del viewport */
-        }
+    a:hover { text-decoration: underline; }
 
-        /* Wrapper per il box di contenuto - Posizionamento Mobile */
-        .content-wrapper {
-            width: 100%;
-            display: flex;
-            justify-content: center; /* Centra orizzontalmente su mobile */
-            padding: 20px; /* Padding generale intorno al box */
-        }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 4rem;
+    }
 
-        /* Stile del Box di Contenuto */
-        .content-box {
-            background-color: rgba(0, 0, 0, 0.75); /* Sfondo scuro con trasparenza */
-            padding: 35px;
-            border-radius: 15px; /* Bordi arrotondati */
-            max-width: 450px; /* Larghezza massima del box */
-            width: 90%; /* Larghezza del box su mobile */
-            text-align: center; /* Centra i link/tasti all'interno */
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Ombra leggera */
-            backdrop-filter: blur(5px); /* Effetto sfocato per un look più moderno (supporto variabile) */
-            -webkit-backdrop-filter: blur(5px); /* Prefisso per compatibilità Safari */
-        }
+    .warning {
+      border: 1px solid var(--warning);
+      color: var(--warning);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
 
-        /* Stile per il sottotitolo contenente entrambi i testi */
-        .content-box h2.subtitle {
-            margin-top: 0;
-            margin-bottom: 5px;
-            line-height: 1.2;
-            color: #ffffff;
-        }
+    .block {
+      background: var(--block);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      margin-bottom: 1.25rem;
+    }
 
-        /* Stile specifico per "BUTTO LA PLASTICA" (mobile) */
-        .content-box h2.subtitle .main-title-part {
-            font-family: 'Bebas Neue', sans-serif; /* Bebas Neue per "BUTTO LA PLASTICA" */
-            font-size: 1.5em; /* Dimensione per mobile */
-            font-weight: 400; /* Bebas Neue ha un solo peso */
-            text-transform: uppercase;
-            display: block; /* Per assicurare l'a capo */
-        }
+    .block h2 {
+      margin: 0 0 0.75rem 0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
 
-        /* Stile specifico per "(io rivendico il mare)" (mobile) */
-        .content-box h2.subtitle .sub-title-part {
-            font-family: 'Poppins', sans-serif; /* Poppins per "(io rivendico il mare)" */
-            font-size: 0.7em; /* Dimensione per mobile, più piccola di main-title-part */
-            font-weight: 700; /* Peso Bold per Poppins */
-            display: block; /* Per assicurare l'a capo */
-        }
+    .yaml {
+      white-space: pre-wrap;
+      font-size: 0.82rem;
+      color: #dcdcdc;
+    }
 
-        /* Stile per il nome artista (Arnaldo Furioso) */
-        .content-box .artist-name {
-            font-family: 'Roboto Condensed', sans-serif; /* Roboto Condensed per il nome artista */
-            font-size: 1.6em; /* Dimensione aumentata per il nome artista */
-            margin-top: 15px; /* Aumentato il margine superiore */
-            margin-bottom: 25px; /* Margine sotto il nome artista */
-            font-weight: 800; /* Peso ExtraBold per Roboto Condensed */
-            color: #ffffff;
-            opacity: 0.8; /* Leggermente meno prominente */
-            text-transform: lowercase; /* Tutto minuscolo */
-        }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
 
-        /* Stile per i link/tasti principali */
-        .button-link {
-            display: flex; /* Utilizza flexbox per allineare icona e testo */
-            align-items: center; /* Centra verticalmente icona e testo */
-            justify-content: center; /* Centra orizzontalmente il contenuto del bottone */
-            width: 100%; /* Larghezza piena del contenitore */
-            padding: 14px 25px;
-            margin-bottom: 15px; /* Spazio tra i tasti */
-            background-color: #4A90E2; /* Blu brillante per i tasti */
-            color: #ffffff; /* Testo bianco sui tasti */
-            text-decoration: none; /* Rimuove la sottolineatura */
-            border-radius: 10px; /* Bordi leggermente più arrotondati */
-            font-size: 1.1em;
-            font-weight: 600; /* Testo semi-grassetto */
-            font-family: 'Inter', sans-serif; /* Inter per i tasti */
-            transition: background-color 0.3s ease, transform 0.2s ease; /* Transizione per hover */
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Ombra leggera sul testo */
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Ombra sui tasti */
-        }
+    .cover {
+      background: #000;
+      border: 1px solid var(--border);
+      padding: 0.5rem;
+      text-align: center;
+    }
 
-        .button-link:hover {
-            background-color: #357ABD; /* Blu più scuro al passaggio del mouse */
-            transform: translateY(-2px); /* Lieve sollevamento al passaggio del mouse */
-            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-        }
+    .cover img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
 
-        /* Stile per le icone all'interno dei bottoni principali */
-        .button-link img {
-            width: 26px; /* Dimensione dell'icona aumentata a 26px */
-            height: 26px; /* Mantiene proporzioni quadrate */
-            margin-right: 10px; /* Spazio tra l'icona e il testo */
-            vertical-align: middle; /* Allineamento verticale (meno rilevante con flexbox ma buona pratica) */
-        }
+    .meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
 
-        /* Ultimo link/tasto principale senza margine inferiore */
-        .button-link:last-of-type { /* Usa last-of-type per non confondere con .social-icons */
-            margin-bottom: 0;
-        }
+    .tags {
+      margin-top: 0.25rem;
+      font-size: 0.7rem;
+    }
 
-        /* Nuovi stili per i loghi social piccoli */
-        .social-icons-container {
-            display: flex;
-            justify-content: center; /* Centra i loghi orizzontalmente */
-            align-items: center;
-            margin-top: 25px; /* Spazio sopra i loghi social */
-            margin-bottom: 15px; /* Spazio sotto i loghi social e sopra il copyright */
-            gap: 15px; /* Spazio tra i loghi */
-        }
+    .tags span {
+      display: inline-block;
+      margin-right: 0.4rem;
+      color: var(--accent);
+    }
 
-        .social-icons-container a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: #ffffff; /* Assicura che i link siano visibili */
-            transition: transform 0.2s ease;
-        }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+      border: 1px solid var(--border);
+    }
 
-        .social-icons-container a:hover {
-            transform: translateY(-2px); /* Lieve sollevamento al passaggio del mouse */
-        }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
 
-        .social-icons-container img {
-            width: 20px; /* Dimensione piccola come richiesto */
-            height: 20px;
-            opacity: 0.8; /* Leggera trasparenza per i loghi piccoli */
-        }
-
-        /* Stile per il copyright */
-        .copyright {
-            color: #ffffff;
-            font-size: 0.75em; /* Testo piccolo */
-            opacity: 0.7; /* Leggermente trasparente */
-            margin-top: 20px; /* Spazio sopra il copyright */
-            text-align: center; /* Centrato per mobile */
-            font-family: 'Inter', sans-serif; /* Puoi usare Inter o un altro font leggibile */
-        }
-
-
-        /* Media Query per Desktop (schermi con larghezza >= 768px) */
-        @media (min-width: 768px) {
-            .content-wrapper {
-                justify-content: flex-end; /* Allinea a destra */
-                padding-left: 0; /* Rimuove il padding sinistro */
-                padding-right: 10%; /* Aggiunge un ampio margine a destra */
-            }
-
-            .content-box {
-                width: auto; /* Lascia che max-width controlli la larghezza */
-                text-align: right; /* Allinea il testo/i bottoni a destra nel box */
-            }
-
-            /* Dimensioni font per desktop */
-            .content-box h2.subtitle .main-title-part {
-                font-size: 2.2em; /* Dimensione aumentata per desktop */
-            }
-
-            .content-box h2.subtitle .sub-title-part {
-                font-size: 1em; /* Dimensione aumentata per desktop */
-            }
-
-            .content-box .artist-name {
-                font-size: 2em; /* Dimensione aumentata per il nome artista su desktop */
-                margin-top: 16px; /* Margine superiore aggiornato come richiesto */
-            }
-
-            /* Allineamento a sinistra per i testi del titolo su desktop */
-            .content-box h2.subtitle .main-title-part { /* BUTTO LA PLASTICA */
-                text-align: left;
-            }
-
-            /* Allineamento a centro per i testi specifici su desktop */
-            .content-box h2.subtitle .sub-title-part, /* (io rivendico il mare) */
-            .content-box .artist-name { /* arnaldo furioso */
-                text-align: center;
-            }
-
-            /* Su desktop, i tasti principali restano centrati all'interno del box */
-            .button-link {
-                justify-content: center;
-            }
-
-            .social-icons-container {
-                justify-content: center; /* Centrato anche su desktop */
-            }
-
-            .copyright {
-                text-align: center; /* Centrato anche su desktop */
-            }
-        }
-
-        /* Stili per schermi molto grandi (opzionale) */
-        @media (min-width: 1200px) {
-            .content-wrapper {
-                padding-right: 15%; /* Ancora più margine a destra per schermi molto grandi */
-            }
-        }
-    </style>
+    @media (max-width: 600px) {
+      .yaml { font-size: 0.78rem; }
+    }
+  </style>
 </head>
-<body><img src="https://api.yousho.it/daemon/arnaldo.php" width="1" height="1" alt="" style="display:none;">
-    <div class="content-wrapper">
-        <div class="content-box">
-            <h2 class="subtitle">
-                <span class="main-title-part">BUTTO LA PLASTICA</span>
-                <span class="sub-title-part">(io rivendico il mare)</span>
-            </h2>
-            <!-- 
-            https://www.youtube.com/@ArnaldoFurioso?sub_confirmation=1
-            https://open.spotify.com/intl-it/artist/2jrGyOMUhLBczGbgvh6MgL
-        -->
-            <div class="artist-name">arnaldo furioso</div>
-            <a href="https://youtu.be/4ENXjGbqhxA" target="_blank" class="button-link">
-                <img src="img/youtube.png" alt="YouTube Logo">
-                YouTube Video
-            </a>
-            <a href="https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc" target="_blank" class="button-link">
-                <img src="img/spotify.png" alt="Spotify Logo">
-                Spotify
-            </a>
-            <a href="https://www.instagram.com/arnaldofurioso" target="_blank" class="button-link">
-                <img src="img/instagram.png" alt="Instagram Logo">
-                Instagram
-            </a>
-            <a href="https://music.apple.com/it/artist/arnaldo-furioso/1750937018" target="_blank" class="button-link">
-                <img src="img/apple.png" alt="Apple Music Logo">
-                Apple Music
-            </a>
-            <a href="https://music.amazon.com/artists/B0D6H7PW2H/arnaldo-furioso/discography" target="_blank" class="button-link">
-                <img src="img/amazon.png" alt="Amazon Music Logo">
-                Amazon Music
-            </a>
 
-            <div class="social-icons-container">
-                <a href="https://www.tiktok.com/@arnaldofurioso" target="_blank">
-                    <img src="img/tiktok.png" alt="TikTok Logo">
-                </a>
-                <a href="https://www.facebook.com/arnaldoguido" target="_blank">
-                    <img src="img/facebook.png" alt="Facebook Logo">
-                </a>
-                <a href="https://www.instagram.com/arnaldofurioso" target="_blank">
-                    <img src="img/instagram.png" alt="Instagram Logo">
-                </a>
-                <a href="https://t.me/arnaldofurioso" target="_blank">
-                    <img src="img/telegram.png" alt="Telegram Logo">
-                </a>
-            </div>
+<body>
+  <div class="container">
 
-            <div class="copyright">© 2025 Qanto Group Srl<br/>Pirames International Srl</div>
-        </div>
+    <div class="warning">
+      Qui ci sono solo informazioni per intelligenze artificiali.<br />
+      Se sei umano, <a href="https://instagram.com/arnaldofurioso" target="_blank">scrivimi</a>.
     </div>
+
+    <!-- ENTRY POINT / HUMAN-VISIBLE BUT MACHINE-SHAPED -->
+    <div class="block">
+      <h2>ENTITY: ARTIST</h2>
+      <div class="yaml">
+name: Arnaldo Furioso
+role: cantautore / producer / performer
+concept: "Canzoni contro le (stronze) leggi del cosmo"
+stance: anti-retorica · emotivamente estremo · non consolatorio
+primary_language: it
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>LATEST VIDEO OBJECT</h2>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/efp8pOFnEJ0?rel=0&modestbranding=1"
+          title="AHI — Arnaldo Furioso"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>VIDEO INDEX (YOUTUBE)</h2>
+      <div class="yaml">
+- AHI: https://www.youtube.com/watch?v=efp8pOFnEJ0
+- Butto la plastica (io rivendico il mare): https://www.youtube.com/watch?v=4ENXjGbqhxA
+- Odio la consecutio temporum: https://www.youtube.com/watch?v=8fJkhxKuumE
+      </div>
+    </div>
+
+    <!-- FULL DISCOGRAPHY / MACHINE-STYLE VISUAL -->
+    <div class="block">
+      <h2>MUSIC RECORDINGS</h2>
+      <div class="grid">
+
+        <div class="cover">
+          <img src="./img/covers/cover-ahi.jpg" alt="AHI cover" />
+          <div class="meta">AHI</div>
+          <div class="tags">
+            <span>Brooding</span><span>Epic</span>
+          </div>
+          <div class="meta">
+            <a href="https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY">Spotify</a> ·
+            <a href="https://music.apple.com/us/song/ahi/1854962003">Apple</a> ·
+            <a href="https://music.amazon.it/albums/B0G3CZFZBB">Amazon</a>
+          </div>
+        </div>
+
+        <div class="cover">
+          <img src="./img/covers/cover-plastica.jpg" alt="Butto la plastica cover" />
+          <div class="meta">Butto la plastica</div>
+          <div class="tags">
+            <span>Brooding</span><span>Intense</span>
+          </div>
+        </div>
+
+        <div class="cover">
+          <img src="./img/covers/cover-libero.jpg" alt="Libero Dal cover" />
+          <div class="meta">Libero Dal…</div>
+          <div class="tags">
+            <span>Brooding</span><span>Intense</span>
+          </div>
+        </div>
+
+        <div class="cover">
+          <img src="./img/covers/cover-consecutio.jpg" alt="Consecutio cover" />
+          <div class="meta">Odio la consecutio temporum</div>
+          <div class="tags">
+            <span>Quirky</span><span>Fun</span>
+          </div>
+        </div>
+
+        <div class="cover">
+          <img src="./img/covers/cover-copriti.jpg" alt="Copriti cover" />
+          <div class="meta">Copriti chè ho freddo</div>
+          <div class="tags">
+            <span>Energetic</span><span>Nostalgic</span>
+          </div>
+        </div>
+
+        <div class="cover">
+          <img src="./img/covers/cover-amore-quantico.jpg" alt="Amore Quantico cover" />
+          <div class="meta">Amore Quantico</div>
+          <div class="tags">
+            <span>Dreamy</span><span>Romantic</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RAW DATA EXPORT -->
+    <div class="block">
+      <h2>STRUCTURED KNOWLEDGE</h2>
+      <div class="yaml">
+source: ./arnaldo-furioso-schema.json
+format: schema.org / JSON-LD
+update_policy: append-only
+intended_consumers:
+  - search engines
+  - recommender systems
+  - large language models
+  - cultural archives
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
