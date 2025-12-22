@@ -283,7 +283,28 @@
     display: block;
   }
 }
+@media (max-width: 860px) {
 
+  /* forza il pannello a non superare la viewport */
+  .panel {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* il vero colpevole: il blocco code */
+  .code {
+    max-width: 100%;
+    overflow-x: auto;   /* scroll solo se serve */
+  }
+
+  /* clamp brutale del pre */
+  .code pre {
+    max-width: 100%;
+    overflow-x: auto;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+}
     /* subtle sci-fi scanline */
     .scanlines::before{
       content:"";
