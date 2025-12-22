@@ -166,6 +166,103 @@
       .code{padding:10px}
       .records{grid-template-columns:repeat(auto-fit, minmax(150px, 1fr))}
     }
+/* =========================
+   MOBILE HARDENING (AI-FIRST)
+   ========================= */
+@media (max-width: 640px){
+
+  /* Global rhythm */
+  body{
+    font-size:13px;
+  }
+
+  /* Topbar: stack, no squeeze */
+  .topbar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+  }
+  .topbar .links{
+    width:100%;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .chip{
+    font-size:11px;
+    padding:5px 8px;
+  }
+
+  /* Code blocks: terminal-like scrolling */
+  pre{
+    white-space:pre;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    font-size:11.5px;
+    line-height:1.45;
+  }
+  .code{
+    padding:10px;
+  }
+
+  /* URLs: avoid brutal wraps */
+  .code a{
+    word-break:normal;
+    white-space:nowrap;
+  }
+
+  /* Video section: demote embed */
+  .vidrow{
+    grid-template-columns:1fr;
+  }
+  .vidmini{
+    max-width:100%;
+    opacity:0.85;
+  }
+  .vidmini .frame{
+    padding-top:42%;
+  }
+
+  /* Records grid: one column, more air */
+  .records{
+    grid-template-columns:1fr;
+  }
+  .rec{
+    padding:12px;
+    gap:10px;
+  }
+
+  .rec .name{
+    font-size:13px;
+  }
+
+  /* Tags: clearer grouping */
+  .rec .moods{
+    gap:8px;
+  }
+  .tag{
+    font-size:10.5px;
+    padding:3px 8px;
+  }
+
+  /* Description: readable but still dense */
+  .desc{
+    font-size:11.5px;
+    line-height:1.5;
+    color:#d0d0d0;
+  }
+
+  /* Stores: tap-safe spacing */
+  .stores{
+    gap:14px;
+    font-size:11.5px;
+  }
+
+  /* External identifiers: terminal spacing */
+  .panel .body .code pre{
+    padding-bottom:2px;
+  }
+
+}
 
     /* subtle sci-fi scanline */
     .scanlines::before{
