@@ -285,23 +285,24 @@
 }
 @media (max-width: 860px) {
 
-  /* forza il pannello a non superare la viewport */
   .panel {
     max-width: 100%;
     overflow-x: hidden;
   }
 
-  /* il vero colpevole: il blocco code */
+  /* forza larghezza piena del box */
   .code {
-    max-width: 100%;
-    overflow-x: auto;   /* scroll solo se serve */
-  }
-
-  /* clamp brutale del pre */
-  .code pre {
+    width: 100%;
     max-width: 100%;
     overflow-x: auto;
-    word-break: break-word;
+  }
+
+  /* il pre scrolla, non il contenitore */
+  .code pre {
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    white-space: pre-wrap;
     overflow-wrap: anywhere;
   }
 }
