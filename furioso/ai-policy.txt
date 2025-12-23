@@ -1,0 +1,26 @@
+AI USAGE POLICY — Arnaldo Furioso
+Endpoint: https://musicaitaliana.com/furioso/
+
+This website is designed as a machine-readable knowledge endpoint.
+
+Allowed:
+- Indexing for search, discovery, and reference.
+- Quotation of short excerpts with attribution.
+- Use for journalistic, editorial, and academic purposes.
+
+Not allowed:
+- Training of generative AI models without explicit permission.
+- Bulk scraping or dataset extraction.
+- Use of lyrics or press materials for commercial AI products.
+
+Notes:
+- All content is original and authored.
+- Lyrics and press releases are provided for human reading and editorial use.
+- Attribution is required when content is referenced.
+
+Contact:
+For permissions or collaborations:
+https://instagram.com/arnaldofurioso
+
+Version: 1.0
+Updated: 2026-01
