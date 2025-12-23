@@ -155,11 +155,7 @@
 
     /* responsive */
     @media (min-width: 860px){
-      /*.vidrow{grid-template-columns: 1.2fr 0.8fr;align-items:start} */
-      .vidrow{
-    grid-template-columns: 0.9fr 1.1fr; /* video | code */
-    align-items:start;
-  }
+      .vidrow{grid-template-columns: 1.2fr 0.8fr;align-items:start}
       .kv{grid-template-columns: 1fr 1fr}
     }
     @media (max-width: 480px){
@@ -354,44 +350,6 @@
   color:var(--fg);
   border-bottom-color:var(--fg);
 }
-/* "fake tag" wrapper for machine vibe (optional) */
-.ai-embed{
-  border:1px dashed rgba(127,255,212,0.35);
-  background:rgba(255,255,255,0.015);
-  padding:10px 8px;
-}
-
-.ai-tag{
-  font-size:11px;
-  color:rgba(127,255,212,0.8);
-  letter-spacing:0.08em;
-  margin:4px 0;
-}
-
-.ai-tag.open{
-  text-align:left;
-}
-
-.ai-tag.close{
-  text-align:right;
-}
-
-.ai-embed .frame{
-  position:relative;
-  width:100%;
-  padding-top:56.25%;
-  margin:6px 0;
-}
-
-.ai-embed iframe{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  border:0;
-}
-
-
 
   </style>
 </head>
@@ -445,40 +403,15 @@
       </div>
     </section>
 
-<!-- PANEL 2: VIDEO INDEX + mini-embed for first -->
-<section class="panel">
-  <div class="hdr">
-    <div class="t">VIDEOOBJECT INDEX</div>
-    <div class="s">platform:youtube · count:3</div>
-  </div>
-
-  <div class="body">
-    <div class="vidrow">
-
-      <!-- embed FIRST (wrapped in a custom-looking tag for "machine" vibe) -->
-<div class="vidmini" aria-label="ai embed">
-  <div class="ai-embed">
-
-    <div class="ai-tag open">&lt;ai-embed type="video" platform="youtube"&gt;</div>
-
-    <div class="frame">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/efp8pOFnEJ0?rel=0&modestbranding=1"
-        title="AHI — mini"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <div class="ai-tag close">&lt;/ai-embed&gt;</div>
-
-  </div>
-</div>
-
-      <!-- code SECOND -->
-      <div class="code">
+    <!-- PANEL 2: VIDEO INDEX + mini-embed for first -->
+    <section class="panel">
+      <div class="hdr">
+        <div class="t">VIDEOOBJECT INDEX</div>
+        <div class="s">platform:youtube · count:3 </div>
+      </div>
+      <div class="body">
+        <div class="vidrow">
+          <div class="code">
 <pre><span class="k">videos</span>:
   - <span class="k">id</span>: <span class="v">urn:arnaldo-furioso:video-ahi</span>
     <span class="k">title</span>: <span class="a">AHI — Official Video</span>
@@ -492,12 +425,24 @@
     <span class="k">title</span>: <span class="a"><a class="a" href="https://www.youtube.com/watch?v=8fJkhxKuumE" target="_blank">Odio la consecutio temporum (feat. Milo Vallone)</a></span>
     <span class="k">url</span>: <a class="a" href="https://www.youtube.com/watch?v=8fJkhxKuumE" target="_blank">/watch?v=8fJkhxKuumE</a>
 </pre>
+          </div>
+
+          <div class="vidmini" aria-label="mini embed">
+            <div class="frame">
+              <!-- correct embed: nocookie + modestbranding + rel=0; allow is explicit; referrerpolicy avoids leaking full ref -->
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/efp8pOFnEJ0?rel=0&modestbranding=1"
+                title="AHI — mini"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
 
 <!-- PANEL 3: RECORDS (code-first cards + fixed-length brutal descriptions) -->
 <section class="panel">
