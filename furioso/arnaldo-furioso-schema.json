@@ -91,10 +91,29 @@
         "https://music.apple.com/us/artist/arnaldo-furioso/1750937018",
         "https://music.amazon.it/artists/B0D6H7PW2H/arnaldo-furioso"
       ],
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-portrait.jpg"
-      }
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-portrait-1x1.jpg",
+          "width": 1440,
+          "height": 1440,
+          "caption": "Arnaldo Furioso — Portrait"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-theatrical-16x9.png",
+          "width": 2048,
+          "height": 1152,
+          "caption": "Arnaldo Furioso — Theatrical performance"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-cinematic-1x1.png",
+          "width": 2160,
+          "height": 2160,
+          "caption": "Arnaldo Furioso — Cinematic performance"
+        }
+      ]
     },
 
     {
@@ -113,11 +132,7 @@
         { "@id": "urn:arnaldo-furioso:track-copriti" },
         { "@id": "urn:arnaldo-furioso:track-amore-quantico" }
       ],
-      "inLanguage": "it",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://musicaitaliana.com/furioso/img/canzoni-contro-leggi-del-cosmo-cover.jpg"
-      }
+      "inLanguage": "it"
     },
 
     {
