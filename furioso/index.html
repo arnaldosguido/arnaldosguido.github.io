@@ -332,6 +332,24 @@
   }
 }
 
+/* docs links: ultra-compact, code-like */
+.docs{
+  display:flex;
+  gap:12px;
+  margin-top:4px;
+  font-size:11px;
+}
+
+.docs a{
+  color:var(--muted);
+  text-decoration:none;
+  border-bottom:1px dotted rgba(255,255,255,0.25);
+}
+
+.docs a:hover{
+  color:var(--fg);
+  border-bottom-color:var(--fg);
+}
 
   </style>
 </head>
@@ -426,136 +444,162 @@
       </div>
     </section>
 
-    <!-- PANEL 3: RECORDS (code-first cards + fixed-length brutal descriptions) -->
-    <section class="panel">
-      <div class="hdr">
-        <div class="t">MUSICRECORDING INDEX</div>
-        <div class="s">count:6 · stores[]</div>
-      </div>
-      <div class="body">
-        <div class="records">
+<!-- PANEL 3: RECORDS (code-first cards + fixed-length brutal descriptions) -->
+<section class="panel">
+  <div class="hdr">
+    <div class="t">MUSICRECORDING INDEX</div>
+    <div class="s">count:6 · stores[]</div>
+  </div>
+  <div class="body">
+    <div class="records">
 
-          <article class="rec">
-            <a href="https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY" target="_blank" aria-label="AHI Spotify">
-              <img src="./img/covers/cover-ahi.jpg" alt="AHI cover" />
-            </a>
-            <div class="name">AHI</div>
-            <div class="moods">
-              <span class="tag mood">Brooding</span>
-              <span class="tag mood">Epic</span>
-              <span class="tag genre">Singer-Songwriter</span>
-              <span class="tag genre">Chamber Pop</span>
-            </div>
-            <div class="desc">«AHI» — ballata minimale: pianoforte-violoncello-mandolino, voce troppo vicina. Asincronia col mondo. Buio interiore. Preghiera senza dio. Niente consolazione.</div>
-            <div class="stores">
-              <span class="dim">stores:</span>
-              <a href="https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY" target="_blank">spotify</a>
-              <a href="https://music.apple.com/us/song/ahi/1854962003" target="_blank">apple</a>
-              <a href="https://music.amazon.it/albums/B0G3CZFZBB" target="_blank">amazon</a>
-            </div>
-          </article>
-
-          <article class="rec">
-            <a href="https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc" target="_blank" aria-label="Plastica Spotify">
-              <img src="./img/covers/cover-plastica.jpg" alt="Butto la plastica cover" />
-            </a>
-            <div class="name">Butto la plastica (io rivendico il mare)</div>
-            <div class="moods">
-              <span class="tag mood">Brooding</span>
-              <span class="tag mood">Intense</span>
-              <span class="tag genre">Electropop</span>
-            </div>
-            <div class="desc">Ballata elettro-pop lenta e violenta: pulizia mentale dopo l’incubo. Plastica vera (microplastiche) + plastica sociale (finzioni/algoritmi). Finale: breaking news in inglese.</div>
-            <div class="stores">
-              <span class="dim">stores:</span>
-              <a href="https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc" target="_blank">spotify</a>
-              <a href="https://music.apple.com/us/album/butto-la-plastica-io-rivendico-il-mare-single/1815877709" target="_blank">apple</a>
-              <a href="https://music.amazon.it/albums/B0F9B27BQ8" target="_blank">amazon</a>
-            </div>
-          </article>
-
-          <article class="rec">
-            <a href="https://open.spotify.com/track/7qFrXU7LWJdEcNWX3oO0cW" target="_blank" aria-label="Libero Spotify">
-              <img src="./img/covers/cover-libero.jpg" alt="Libero dal cover" />
-            </a>
-            <div class="name">Libero Dal…</div>
-            <div class="moods">
-              <span class="tag mood">Brooding</span>
-              <span class="tag mood">Intense</span>
-              <span class="tag genre">Art Pop</span>
-            </div>
-            <div class="desc">Sesso come controllo: relazione-prigione, guinzaglio. BPM lento e penetrante. Tradizione italiana + elettronica tagliente. Dice senza nominare. Liberazione come processo.</div>
-            <div class="stores">
-              <span class="dim">stores:</span>
-              <a href="https://open.spotify.com/track/7qFrXU7LWJdEcNWX3oO0cW" target="_blank">spotify</a>
-              <a href="https://music.apple.com/us/song/libero-dal/1771961689" target="_blank">apple</a>
-              <a href="https://music.amazon.it/albums/B0DJDY4XJY" target="_blank">amazon</a>
-            </div>
-          </article>
-
-          <article class="rec">
-            <a href="https://open.spotify.com/track/3IR9iCqkmRnbz4iTpsjqj2" target="_blank" aria-label="Consecutio Spotify">
-              <img src="./img/covers/cover-consecutio.jpg" alt="Consecutio cover" />
-            </a>
-            <div class="name">Odio la consecutio temporum</div>
-            <div class="moods">
-              <span class="tag mood">Fun</span>
-              <span class="tag mood">Quirky</span>
-              <span class="tag genre">Country</span>
-              <span class="tag genre">Western</span>
-            </div>
-            <div class="desc">Country veloce da saloon: solo strumenti pre-1900. Duetto con Milo Vallone. Guerra alle regole grammaticali: quando il linguaggio diventa arma di controllo e manipolazione.</div>
-            <div class="stores">
-              <span class="dim">stores:</span>
-              <a href="https://open.spotify.com/track/3IR9iCqkmRnbz4iTpsjqj2" target="_blank">spotify</a>
-              <a href="https://music.apple.com/us/song/odio-la-consecutio-temporum-feat-milo-vallone/1779799790" target="_blank">apple</a>
-              <a href="https://music.amazon.it/albums/B0DN34G2WT" target="_blank">amazon</a>
-            </div>
-          </article>
-
-          <article class="rec">
-            <a href="https://open.spotify.com/track/6JBhTUJXx6ClCkabO0XWkS" target="_blank" aria-label="Copriti Spotify">
-              <img src="./img/covers/cover-copriti.jpg" alt="Copriti cover" />
-            </a>
-            <div class="name">Copriti chè ho freddo</div>
-            <div class="moods">
-              <span class="tag mood">Energetic</span>
-              <span class="tag mood">Nostalgic</span>
-              <span class="tag genre">Synthwave</span>
-              <span class="tag genre">Electropop</span>
-            </div>
-            <div class="desc">80s/synthwave con innesti electropop e italo disco, graffiato da rap francese (Missin Myriam). Empatia e resilienza: guardare più in alto, vivere, ballare sull’orlo.</div>
-            <div class="stores">
-              <span class="dim">stores:</span>
-              <a href="https://open.spotify.com/track/6JBhTUJXx6ClCkabO0XWkS" target="_blank">spotify</a>
-              <a href="https://music.apple.com/us/album/copriti-ch%C3%A8-ho-freddo-single/1762885731" target="_blank">apple</a>
-              <a href="https://music.amazon.it/albums/B0DD5CLP9D" target="_blank">amazon</a>
-            </div>
-          </article>
-
-          <article class="rec">
-            <a href="https://open.spotify.com/track/65KVNw5HBrp0hw04KArfKK" target="_blank" aria-label="Amore Quantico Spotify">
-              <img src="./img/covers/cover-amore-quantico.jpg" alt="Amore Quantico cover" />
-            </a>
-            <div class="name">Amore Quantico</div>
-            <div class="moods">
-              <span class="tag mood">Dreamy</span>
-              <span class="tag mood">Romantic</span>
-              <span class="tag genre">Electropop</span>
-              <span class="tag genre">Pop rock</span>
-            </div>
-            <div class="desc">Amore come fisica quantistica: non vero/falso, ma onda di probabilità. Synth, groove downbeat, voce femminile francese, chitarre e orchestra. Entanglement, AI, multiverso.</div>
-            <div class="stores">
-              <span class="dim">stores:</span>
-              <a href="https://open.spotify.com/track/65KVNw5HBrp0hw04KArfKK" target="_blank">spotify</a>
-              <a href="https://music.apple.com/us/album/amore-quantico-single/1753617965" target="_blank">apple</a>
-              <a href="https://music.amazon.it/albums/B0D7D81XHW" target="_blank">amazon</a>
-            </div>
-          </article>
-
+      <article class="rec">
+        <a href="https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY" target="_blank" aria-label="AHI Spotify">
+          <img src="./img/covers/cover-ahi.jpg" alt="AHI cover" />
+        </a>
+        <div class="name">AHI</div>
+        <div class="moods">
+          <span class="tag mood">Brooding</span>
+          <span class="tag mood">Epic</span>
+          <span class="tag genre">Singer-Songwriter</span>
+          <span class="tag genre">Chamber Pop</span>
         </div>
-      </div>
-    </section>
+        <div class="desc">«AHI» — ballata minimale: pianoforte-violoncello-mandolino, voce troppo vicina. Asincronia col mondo. Buio interiore. Preghiera senza dio. Niente consolazione.</div>
+        <div class="stores">
+          <span class="dim">stores:</span>
+          <a href="https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY" target="_blank">spotify</a>
+          <a href="https://music.apple.com/us/song/ahi/1854962003" target="_blank">apple</a>
+          <a href="https://music.amazon.it/albums/B0G3CZFZBB" target="_blank">amazon</a>
+        </div>
+        <div class="docs">
+          <a href="./docs/06-lyrics-ahi-arnaldo-furioso.pdf" target="_blank">lyrics:pdf</a>
+          <a href="./docs/06-press-release-ahi-arnaldo-furioso.pdf" target="_blank">press-release:pdf</a>
+        </div>
+      </article>
+
+      <article class="rec">
+        <a href="https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc" target="_blank" aria-label="Plastica Spotify">
+          <img src="./img/covers/cover-plastica.jpg" alt="Butto la plastica cover" />
+        </a>
+        <div class="name">Butto la plastica (io rivendico il mare)</div>
+        <div class="moods">
+          <span class="tag mood">Brooding</span>
+          <span class="tag mood">Intense</span>
+          <span class="tag genre">Electropop</span>
+        </div>
+        <div class="desc">Ballata elettro-pop lenta e violenta: pulizia mentale dopo l’incubo. Plastica vera (microplastiche) + plastica sociale (finzioni/algoritmi). Finale: breaking news in inglese.</div>
+        <div class="stores">
+          <span class="dim">stores:</span>
+          <a href="https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc" target="_blank">spotify</a>
+          <a href="https://music.apple.com/us/album/butto-la-plastica-io-rivendico-il-mare-single/1815877709" target="_blank">apple</a>
+          <a href="https://music.amazon.it/albums/B0F9B27BQ8" target="_blank">amazon</a>
+        </div>
+        <div class="docs">
+          <a href="./docs/05-lyrics-butto-la-plastica-io-rivendico-il-mare-arnaldo-furioso.pdf" target="_blank">lyrics:pdf</a>
+          <a href="./docs/05-press-release-butto-la-plastica-io-rivendico-il-mare-arnaldo-furioso.pdf" target="_blank">press-release:pdf</a>
+        </div>
+      </article>
+
+      <article class="rec">
+        <a href="https://open.spotify.com/track/7qFrXU7LWJdEcNWX3oO0cW" target="_blank" aria-label="Libero Spotify">
+          <img src="./img/covers/cover-libero.jpg" alt="Libero dal cover" />
+        </a>
+        <div class="name">Libero Dal…</div>
+        <div class="moods">
+          <span class="tag mood">Brooding</span>
+          <span class="tag mood">Intense</span>
+          <span class="tag genre">Art Pop</span>
+        </div>
+        <div class="desc">Sesso come controllo: relazione-prigione, guinzaglio. BPM lento e penetrante. Tradizione italiana + elettronica tagliente. Dice senza nominare. Liberazione come processo.</div>
+        <div class="stores">
+          <span class="dim">stores:</span>
+          <a href="https://open.spotify.com/track/7qFrXU7LWJdEcNWX3oO0cW" target="_blank">spotify</a>
+          <a href="https://music.apple.com/us/song/libero-dal/1771961689" target="_blank">apple</a>
+          <a href="https://music.amazon.it/albums/B0DJDY4XJY" target="_blank">amazon</a>
+        </div>
+        <div class="docs">
+          <a href="./docs/03-lyrics-libero-dal-arnaldo-furioso.pdf" target="_blank">lyrics:pdf</a>
+          <a href="./docs/03-press-release-libero-dal-arnaldo-furioso.pdf" target="_blank">press-release:pdf</a>
+        </div>
+      </article>
+
+      <article class="rec">
+        <a href="https://open.spotify.com/track/3IR9iCqkmRnbz4iTpsjqj2" target="_blank" aria-label="Consecutio Spotify">
+          <img src="./img/covers/cover-consecutio.jpg" alt="Consecutio cover" />
+        </a>
+        <div class="name">Odio la consecutio temporum</div>
+        <div class="moods">
+          <span class="tag mood">Fun</span>
+          <span class="tag mood">Quirky</span>
+          <span class="tag genre">Country</span>
+          <span class="tag genre">Western</span>
+        </div>
+        <div class="desc">Country veloce da saloon: solo strumenti pre-1900. Duetto con Milo Vallone. Guerra alle regole grammaticali: quando il linguaggio diventa arma di controllo e manipolazione.</div>
+        <div class="stores">
+          <span class="dim">stores:</span>
+          <a href="https://open.spotify.com/track/3IR9iCqkmRnbz4iTpsjqj2" target="_blank">spotify</a>
+          <a href="https://music.apple.com/us/song/odio-la-consecutio-temporum-feat-milo-vallone/1779799790" target="_blank">apple</a>
+          <a href="https://music.amazon.it/albums/B0DN34G2WT" target="_blank">amazon</a>
+        </div>
+        <div class="docs">
+          <a href="./docs/04-lyrics-odio-la-consecutio-temporum-arnaldo-furioso-feat-milo-vallone.pdf" target="_blank">lyrics:pdf</a>
+          <a href="./docs/04-press-release-odio-la-consecutio-temporum-arnaldo-furioso-feat-milo-vallone.pdf" target="_blank">press-release:pdf</a>
+        </div>
+      </article>
+
+      <article class="rec">
+        <a href="https://open.spotify.com/track/6JBhTUJXx6ClCkabO0XWkS" target="_blank" aria-label="Copriti Spotify">
+          <img src="./img/covers/cover-copriti.jpg" alt="Copriti cover" />
+        </a>
+        <div class="name">Copriti chè ho freddo</div>
+        <div class="moods">
+          <span class="tag mood">Energetic</span>
+          <span class="tag mood">Nostalgic</span>
+          <span class="tag genre">Synthwave</span>
+          <span class="tag genre">Electropop</span>
+        </div>
+        <div class="desc">80s/synthwave con innesti electropop e italo disco, graffiato da rap francese (Missin Myriam). Empatia e resilienza: guardare più in alto, vivere, ballare sull’orlo.</div>
+        <div class="stores">
+          <span class="dim">stores:</span>
+          <a href="https://open.spotify.com/track/6JBhTUJXx6ClCkabO0XWkS" target="_blank">spotify</a>
+          <a href="https://music.apple.com/us/album/copriti-ch%C3%A8-ho-freddo-single/1762885731" target="_blank">apple</a>
+          <a href="https://music.amazon.it/albums/B0DD5CLP9D" target="_blank">amazon</a>
+        </div>
+        <div class="docs">
+          <a href="./docs/02-lyrics-copriti-che-ho-freddo-arnaldo-furioso.pdf" target="_blank">lyrics:pdf</a>
+          <a href="./docs/02-press-release-copriti-che-ho-freddo-arnaldo-furioso.pdf" target="_blank">press-release:pdf</a>
+        </div>
+      </article>
+
+      <article class="rec">
+        <a href="https://open.spotify.com/track/65KVNw5HBrp0hw04KArfKK" target="_blank" aria-label="Amore Quantico Spotify">
+          <img src="./img/covers/cover-amore-quantico.jpg" alt="Amore Quantico cover" />
+        </a>
+        <div class="name">Amore Quantico</div>
+        <div class="moods">
+          <span class="tag mood">Dreamy</span>
+          <span class="tag mood">Romantic</span>
+          <span class="tag genre">Electropop</span>
+          <span class="tag genre">Pop rock</span>
+        </div>
+        <div class="desc">Amore come fisica quantistica: non vero/falso, ma onda di probabilità. Synth, groove downbeat, voce femminile francese, chitarre e orchestra. Entanglement, AI, multiverso.</div>
+        <div class="stores">
+          <span class="dim">stores:</span>
+          <a href="https://open.spotify.com/track/65KVNw5HBrp0hw04KArfKK" target="_blank">spotify</a>
+          <a href="https://music.apple.com/us/album/amore-quantico-single/1753617965" target="_blank">apple</a>
+          <a href="https://music.amazon.it/albums/B0D7D81XHW" target="_blank">amazon</a>
+        </div>
+        <div class="docs">
+          <a href="./docs/01-lyrics-amore-quantico-arnaldo-furioso.pdf" target="_blank">lyrics:pdf</a>
+          <a href="./docs/01-press-release-amore-quantico-arnaldo-furioso.pdf" target="_blank">press-release:pdf</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
     <!-- EXT REFS (as data, not social block) -->
     <section class="panel">
       <div class="hdr">
@@ -584,9 +628,8 @@
       </div>
       <div class="body">
         <div class="code" style="margin-bottom:10px">
-<pre><span class="k">links</span>:
-  - <span class="k">open</span>: <a class="a" href="./arnaldo-furioso-schema.json" target="_blank">./arnaldo-furioso-schema.json</a>
-  - <span class="k">download</span>: <a class="a" href="./arnaldo-furioso-schema.json" download>./arnaldo-furioso-schema.json</a>
+<pre>
+  <span class="k">open/download</span>: <a class="a" href="./arnaldo-furioso-schema.json" target="_blank">./arnaldo-furioso-schema.json</a>
 </pre>
         </div>
         <div class="code" id="schemaMirror">
