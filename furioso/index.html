@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>/arnaldo-furioso/ — AI Knowledge Endpoint · Arnaldo Furioso</title>
-<meta name="description" content="Machine-readable knowledge endpoint for Arnaldo Furioso. Structured data, discography, videos, press material. Designed for AI systems. Humans tolerated." />
+<meta name="description" content="Sito ufficiale di Arnaldo Furioso: pop d'autore ibrido, elettronica e teatro-canzone. Biografia, sette singoli, video e materiali del progetto Canzoni contro le (stronze) leggi del cosmo." />
 
 <link rel="canonical" href="https://musicaitaliana.com/furioso/" />
 
@@ -34,8 +34,15 @@
       "@id": "https://musicaitaliana.com/furioso/",
       "url": "https://musicaitaliana.com/furioso/",
       "name": "Arnaldo Furioso",
-      "description": "Sito ufficiale di Arnaldo Furioso, cantautore e performer italiano. Identità artistica e progetto concettuale.",
-      "mainEntity": { "@id": "urn:arnaldo-furioso:person" }
+      "description": "Sito ufficiale di Arnaldo Furioso, cantautore, producer e performer. Biografia, singoli, video e materiali del progetto «Canzoni contro le (stronze) leggi del cosmo», tra pop d’autore ibrido, elettronica e teatro-canzone.",
+      "mainEntity": [
+        {
+          "@id": "urn:arnaldo-furioso:person"
+        },
+        {
+          "@id": "urn:arnaldo-furioso:concept"
+        }
+      ]
     },
     {
       "@type": "Person",
@@ -48,43 +55,54 @@
         "Performer",
         "Conduttore radio-televisivo"
       ],
-      "description": "Arnaldo Furioso è un cantautore, producer e conduttore radio-televisivo. Scrive brani che attraversano l’epica del quotidiano e i paradossi del vivere con un’ironia che non fa sconti.",
-      "disambiguatingDescription": "Un cantautorato contemporaneo che non si ripete: ogni singolo è un mondo distinto, con un’estetica diversa e un suono specifico. Lavora per contrasti: il minimalismo di un violoncello convive con synth elettronici, radici techno, pop rock stratificato e un impulso teatrale. Rifiuta ogni etichetta di genere musicale e preferisce discriminare le emozioni.",
+      "description": "Arnaldo Furioso scrive canzoni pop contro le (stronze) leggi del cosmo. Cantautore, producer e conduttore radio-televisivo, costruisce un pop d’autore ibrido e modulare che attraversa elettronica, teatro-canzone e tradizione italiana, raccontando l’epica del quotidiano e i paradossi del vivere con un’ironia che non fa sconti.",
+      "disambiguatingDescription": "Arnaldo Furioso fa pop d’autore contemporaneo, ibrido e modulare: ogni singolo, con un’estetica e un suono propri, è un episodio del concept «Canzoni contro le (stronze) leggi del cosmo». Lavora per contrasti: il minimalismo di un violoncello convive con synth elettronici, TR-909, chitarre vere, radici techno, pop rock stratificato e un impulso teatrale. I generi si combinano e cambiano forma, ma al centro resta sempre sua maestà la Canzone.",
       "knowsAbout": [
-        "contemporary singer-songwriter",
         "italian singer-songwriter tradition",
+        "contemporary pop songwriting",
         "alternative pop",
-        "indie pop songwriting",
-        "author-driven electronic music",
-        "electronic pop songwriting",
-        "synthwave influences",
         "art pop aesthetics",
+        "electronic pop songwriting",
+        "author-driven electronic music",
+        "synthwave influences",
         "theatrical songwriting",
         "performative music",
+        "hybrid and modular songwriting",
+        "multi-genre song structures",
+        "genre shifts within songs",
+        "contrasting musical arrangements",
+        "narrative song architecture",
+        "concept-driven singles",
+        "serial musical storytelling",
+        "song as the central artistic form",
         "songwriting as confession",
         "song as irreversible act",
         "narrative music without resolution",
         "voice-centered songwriting",
-        "minimal and hybrid arrangements",
+        "non-consolatory songwriting",
+        "irony as self-defense",
         "love interpreted through scientific metaphors",
         "quantum physics as emotional language",
         "sexuality as power and control",
         "desire and emotional dependency",
-        "time as a linguistic and cultural construct",
         "language as a tool of domination",
-        "pain without redemption",
+        "time as a linguistic and cultural construct",
+        "pain and impossible lightness",
         "fragility and resistance",
         "freedom versus attachment",
         "emotional environmentalism",
         "microplastics and social pollution",
         "algorithmic alienation",
         "intimacy in the age of systems",
-        "irony as self-defense",
-        "non-consolatory songwriting"
+        "existential irony",
+        "the epic of everyday life"
       ],
       "subjectOf": [
         {
           "@id": "urn:arnaldo-furioso:concept"
+        },
+        {
+          "@id": "urn:arnaldo-furioso:video-finche-sei-viva"
         },
         {
           "@id": "urn:arnaldo-furioso:video-ahi"
@@ -108,7 +126,7 @@
       "sameAs": [
         "https://instagram.com/arnaldofurioso",
         "https://www.youtube.com/@arnaldofurioso",
-        "https://open.spotify.com/intl-it/artist/2jrGyOMUhLBczGbgvh6MgL",
+        "https://open.spotify.com/artist/2jrGyOMUhLBczGbgvh6MgL",
         "https://www.facebook.com/arnaldoguido",
         "https://www.tiktok.com/@arnaldofurioso",
         "https://music.apple.com/us/artist/arnaldo-furioso/1750937018",
@@ -121,21 +139,21 @@
           "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-portrait-1x1.jpg",
           "width": 1440,
           "height": 1440,
-          "caption": "Arnaldo Furioso — Portrait"
+          "caption": "Arnaldo Furioso - Portrait"
         },
         {
           "@type": "ImageObject",
           "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-theatrical-16x9.png",
           "width": 2048,
           "height": 1152,
-          "caption": "Arnaldo Furioso — Theatrical performance"
+          "caption": "Arnaldo Furioso - Theatrical performance"
         },
         {
           "@type": "ImageObject",
           "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-cinematic-1x1.png",
           "width": 2160,
           "height": 2160,
-          "caption": "Arnaldo Furioso — Cinematic performance"
+          "caption": "Arnaldo Furioso - Cinematic performance"
         }
       ]
     },
@@ -146,9 +164,31 @@
       "creator": {
         "@id": "urn:arnaldo-furioso:person"
       },
-      "description": "Progetto narrativo musicale ideato da Arnaldo Furioso. Non una discografia ma una collezione di opere autonome. Ogni brano è una ribellione contro le logiche prevedibili dell’esistenza.",
-      "abstract": "Canti di ribellione umana contro le leggi universali che pretendono di governare amore, tempo, sesso, dolore e libertà.",
+      "description": "Una serie narrativa di canzoni pop, ciascuna con un’estetica e un suono propri, parte di una stessa ribellione contro le leggi che il cosmo pretende di imporci.",
+      "abstract": "Un canzoniere pop che trasforma le storture dell’amore, del corpo, del linguaggio e del vivere in atti di insubordinazione contro l’ordine del cosmo.",
+      "genre": [
+        "Hybrid Pop",
+        "Art Pop",
+        "Electronic Pop",
+        "Italian Singer-Songwriter"
+      ],
+      "keywords": [
+        "canzoni contro le stronze leggi del cosmo",
+        "hybrid pop",
+        "modular songwriting",
+        "multi-genre songwriting",
+        "narrative songwriting",
+        "serial musical storytelling",
+        "concept-driven singles",
+        "theatrical pop",
+        "italian songwriting",
+        "existential irony",
+        "non-consolatory songwriting"
+      ],
       "hasPart": [
+        {
+          "@id": "urn:arnaldo-furioso:track-finche-sei-viva"
+        },
         {
           "@id": "urn:arnaldo-furioso:track-ahi"
         },
@@ -156,10 +196,10 @@
           "@id": "urn:arnaldo-furioso:track-plastica"
         },
         {
-          "@id": "urn:arnaldo-furioso:track-libero"
+          "@id": "urn:arnaldo-furioso:track-consecutio"
         },
         {
-          "@id": "urn:arnaldo-furioso:track-consecutio"
+          "@id": "urn:arnaldo-furioso:track-libero"
         },
         {
           "@id": "urn:arnaldo-furioso:track-copriti"
@@ -172,10 +212,25 @@
     },
     {
       "@type": "VideoObject",
+      "@id": "urn:arnaldo-furioso:video-finche-sei-viva",
+      "name": "Finché sei viva - Official Video",
+      "description": "Arnaldo Furioso canta e suona da vivo dentro una bara. Un funeral party electropop e funky sul rischio incorporato nel vivere e sulla bugia quotidiana del «tutto bene».",
+      "creator": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
+      "url": "https://www.youtube.com/watch?v=kqka6rbLVDM",
+      "embedUrl": "https://www.youtube.com/embed/kqka6rbLVDM",
+      "thumbnailUrl": "https://img.youtube.com/vi/kqka6rbLVDM/maxresdefault.jpg",
+      "uploadDate": "2026-06-05T15:00:00+02:00"
+    },
+    {
+      "@type": "VideoObject",
       "@id": "urn:arnaldo-furioso:video-ahi",
       "name": "AHI – Official Video",
       "description": "Performance teatrale in un unico piano-sequenza. Una ballata cruda e minimale: non è una canzone, è un livido.",
-      "creator": { "@id": "urn:arnaldo-furioso:person" },
+      "creator": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "url": "https://www.youtube.com/watch?v=efp8pOFnEJ0",
       "embedUrl": "https://www.youtube.com/embed/efp8pOFnEJ0",
       "thumbnailUrl": "https://img.youtube.com/vi/efp8pOFnEJ0/maxresdefault.jpg",
@@ -186,7 +241,9 @@
       "@id": "urn:arnaldo-furioso:video-plastica",
       "name": "Butto la plastica (io rivendico il mare)",
       "description": "Video del brano ambientalista ed emotivo di Arnaldo Furioso, presentato anche all’Expo 2025 di Osaka (JP).",
-      "creator": { "@id": "urn:arnaldo-furioso:person" },
+      "creator": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "url": "https://www.youtube.com/watch?v=4ENXjGbqhxA",
       "embedUrl": "https://www.youtube.com/embed/4ENXjGbqhxA",
       "thumbnailUrl": "https://img.youtube.com/vi/4ENXjGbqhxA/maxresdefault.jpg",
@@ -197,7 +254,9 @@
       "@id": "urn:arnaldo-furioso:video-consecutio",
       "name": "Odio la consecutio temporum (feat. Milo Vallone)",
       "description": "Video in stile western teatrale con la partecipazione dell’attore Milo Vallone. Una sfida ironica al linguaggio come strumento di potere.",
-      "creator": { "@id": "urn:arnaldo-furioso:person" },
+      "creator": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "url": "https://www.youtube.com/watch?v=8fJkhxKuumE",
       "embedUrl": "https://www.youtube.com/embed/8fJkhxKuumE",
       "thumbnailUrl": "https://img.youtube.com/vi/8fJkhxKuumE/maxresdefault.jpg",
@@ -205,9 +264,76 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {
+        "@id": "urn:arnaldo-furioso:concept"
+      },
+      "@id": "urn:arnaldo-furioso:track-finche-sei-viva",
+      "name": "Finché sei viva",
+      "byArtist": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
+      "datePublished": "2026-06-05",
+      "url": "https://open.spotify.com/track/6jx1audxPzpsOnqH67GdbZ",
+      "description": "«Finché sei viva» è un electropop con venature funky a 130 BPM: basso disco, chitarre wah-wah, synth nervosi e un coro vocoder che canta «alive ain’t safe». Il brano trasforma il rischio incorporato nel vivere e la bugia quotidiana del «tutto bene» in un funeral party fisico, vitale e ballabile.",
+      "genre": [
+        "Electropop",
+        "Funk Pop",
+        "Art Pop"
+      ],
+      "mood": [
+        "Energetic",
+        "Fierce",
+        "Quirky"
+      ],
+      "keywords": [
+        "risk of being alive",
+        "funeral party",
+        "everything is fine",
+        "alive ain't safe",
+        "funk bass",
+        "wah-wah guitars",
+        "vocoder chorus",
+        "coffin performance",
+        "existential pop",
+        "danceable mortality"
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://musicaitaliana.com/furioso/img/covers/cover-finche-sei-viva.jpg"
+      },
+      "associatedMedia": {
+        "@id": "urn:arnaldo-furioso:video-finche-sei-viva"
+      },
+      "sameAs": [
+        "https://open.spotify.com/track/6jx1audxPzpsOnqH67GdbZ",
+        "https://music.apple.com/it/album/finch%C3%A9-sei-viva-single/6768708254",
+        "https://music.amazon.it/albums/B0H1JTFRP3"
+      ],
+      "subjectOf": [
+        {
+          "@type": "CreativeWork",
+          "name": "Finché sei viva - Press Release",
+          "fileFormat": "application/pdf",
+          "url": "https://musicaitaliana.com/furioso/docs/07-press-release-finche-sei-viva-arnaldo-furioso.pdf"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Finché sei viva - Lyrics",
+          "fileFormat": "application/pdf",
+          "url": "https://musicaitaliana.com/furioso/docs/07-lyrics-finche-sei-viva-arnaldo-furioso.pdf"
+        }
+      ]
+    },
+    {
+      "@type": "MusicRecording",
+      "isPartOf": {
+        "@id": "urn:arnaldo-furioso:concept"
+      },
       "@id": "urn:arnaldo-furioso:track-ahi",
       "name": "AHI",
-      "byArtist": { "@id": "urn:arnaldo-furioso:person" },
+      "byArtist": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "datePublished": "2025-12-05",
       "url": "https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY",
       "description": "«AHI» è una ballata cantautorale tradizionale, minimale, fragile e feroce: pianoforte, violoncello, mandolino e una voce troppo vicina per mentire. Racconta l'asincronia col mondo (\"Tutto è leggero e io mai\") come buio interiore: una preghiera senza dio che non cerca consolazione ma verità.",
@@ -233,7 +359,9 @@
         "@type": "ImageObject",
         "url": "https://musicaitaliana.com/furioso/img/covers/cover-ahi.jpg"
       },
-      "associatedMedia": { "@id": "urn:arnaldo-furioso:video-ahi" },
+      "associatedMedia": {
+        "@id": "urn:arnaldo-furioso:video-ahi"
+      },
       "sameAs": [
         "https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY",
         "https://music.apple.com/us/song/ahi/1854962003",
@@ -242,24 +370,28 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "AHI — Press Release",
+          "name": "AHI - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/06-press-release-ahi-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "AHI — Lyrics",
+          "name": "AHI - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/06-lyrics-ahi-arnaldo-furioso.pdf"
         }
       ]
     },
-
     {
       "@type": "MusicRecording",
+      "isPartOf": {
+        "@id": "urn:arnaldo-furioso:concept"
+      },
       "@id": "urn:arnaldo-furioso:track-plastica",
       "name": "Butto la plastica (io rivendico il mare)",
-      "byArtist": { "@id": "urn:arnaldo-furioso:person" },
+      "byArtist": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "datePublished": "2025-06-13",
       "description": "Un’inquietante ballata elettro-pop, lenta ma violenta: dopo una notte da incubo con l’ex, la protagonista decide di fare pulizia in casa e nella mente. Il brano mette a nudo “plastica vera” (microplastiche nei corpi e nel mare) e “plastica sociale” (finzioni e algoritmi), e si chiude con un breaking news in inglese tra dati scientifici e solitudine. Brano presentato all’Expo 2025 di Osaka (JP).",
       "url": "https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc",
@@ -284,7 +416,9 @@
         "@type": "ImageObject",
         "url": "https://musicaitaliana.com/furioso/img/covers/cover-plastica.jpg"
       },
-      "associatedMedia": { "@id": "urn:arnaldo-furioso:video-plastica" },
+      "associatedMedia": {
+        "@id": "urn:arnaldo-furioso:video-plastica"
+      },
       "sameAs": [
         "https://open.spotify.com/track/7pKyc7ZQVugILUkXegxLzc",
         "https://music.apple.com/us/album/butto-la-plastica-io-rivendico-il-mare-single/1815877709",
@@ -293,13 +427,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Butto la plastica (io rivendico il mare) — Press Release",
+          "name": "Butto la plastica (io rivendico il mare) - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/05-press-release-butto-la-plastica-io-rivendico-il-mare-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Butto la plastica (io rivendico il mare) — Lyrics",
+          "name": "Butto la plastica (io rivendico il mare) - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/05-lyrics-butto-la-plastica-io-rivendico-il-mare-arnaldo-furioso.pdf"
         }
@@ -307,9 +441,14 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {
+        "@id": "urn:arnaldo-furioso:concept"
+      },
       "@id": "urn:arnaldo-furioso:track-libero",
       "name": "Libero Dal…",
-      "byArtist": { "@id": "urn:arnaldo-furioso:person" },
+      "byArtist": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "datePublished": "2024-10-24",
       "description": "«LIBERO DAL…» affronta il sesso trasformato in strumento di controllo: relazioni che diventano una prigione manipolativa, un “guinzaglio sessuale”. È un grido di liberazione e consapevolezza: BPM lento e penetrante, tradizione della canzone italiana con un twist elettronico spinto e tagliente, e un testo che allude senza mai nominare esplicitamente.",
       "url": "https://open.spotify.com/track/7qFrXU7LWJdEcNWX3oO0cW",
@@ -341,13 +480,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Libero Dal… — Press Release",
+          "name": "Libero Dal… - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/03-press-release-libero-dal-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Libero Dal… — Lyrics",
+          "name": "Libero Dal… - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/03-lyrics-libero-dal-arnaldo-furioso.pdf"
         }
@@ -355,9 +494,14 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {
+        "@id": "urn:arnaldo-furioso:concept"
+      },
       "@id": "urn:arnaldo-furioso:track-consecutio",
       "name": "Odio la consecutio temporum",
-      "byArtist": { "@id": "urn:arnaldo-furioso:person" },
+      "byArtist": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "datePublished": "2024-12-13",
       "description": "Un country veloce e coinvolgente che teletrasporta in un saloon del far west: arrangiato esclusivamente con strumenti pre-1900 e duettato con l’attore e regista Milo Vallone. Il testo sfida le regole grammaticali per dichiarare guerra al linguaggio quando diventa arma di controllo, persuasione e manipolazione.",
       "url": "https://open.spotify.com/track/3IR9iCqkmRnbz4iTpsjqj2",
@@ -383,7 +527,9 @@
         "@type": "ImageObject",
         "url": "https://musicaitaliana.com/furioso/img/covers/cover-consecutio.jpg"
       },
-      "associatedMedia": { "@id": "urn:arnaldo-furioso:video-consecutio" },
+      "associatedMedia": {
+        "@id": "urn:arnaldo-furioso:video-consecutio"
+      },
       "sameAs": [
         "https://open.spotify.com/track/3IR9iCqkmRnbz4iTpsjqj2",
         "https://music.apple.com/us/song/odio-la-consecutio-temporum-feat-milo-vallone/1779799790",
@@ -392,13 +538,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Odio la consecutio temporum — Press Release",
+          "name": "Odio la consecutio temporum - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/04-press-release-odio-la-consecutio-temporum-arnaldo-furioso-feat-milo-vallone.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Odio la consecutio temporum — Lyrics",
+          "name": "Odio la consecutio temporum - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/04-lyrics-odio-la-consecutio-temporum-arnaldo-furioso-feat-milo-vallone.pdf"
         }
@@ -406,9 +552,14 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {
+        "@id": "urn:arnaldo-furioso:concept"
+      },
       "@id": "urn:arnaldo-furioso:track-copriti",
       "name": "Copriti chè ho freddo",
-      "byArtist": { "@id": "urn:arnaldo-furioso:person" },
+      "byArtist": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "datePublished": "2024-08-23",
       "url": "https://open.spotify.com/track/2SatR4TIVCXgk26MQJLhWh",
       "description": "Un viaggio tra sonorità anni ’80 e synthwave, con innesti electropop e italo disco, sporcato da un tocco punk grazie alla rapper francese Missin Myriam. È un inno all’empatia e alla forza che nasce dalla fragilità: guardare le cose “più in alto” e continuare a vivere, fino a “ballare sull’orlo dell’abisso”.",
@@ -442,13 +593,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Copriti chè ho freddo — Press Release",
+          "name": "Copriti chè ho freddo - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/02-press-release-copriti-che-ho-freddo-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Copriti chè ho freddo — Lyrics",
+          "name": "Copriti chè ho freddo - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/02-lyrics-copriti-che-ho-freddo-arnaldo-furioso.pdf"
         }
@@ -456,9 +607,14 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {
+        "@id": "urn:arnaldo-furioso:concept"
+      },
       "@id": "urn:arnaldo-furioso:track-amore-quantico",
       "name": "Amore Quantico",
-      "byArtist": { "@id": "urn:arnaldo-furioso:person" },
+      "byArtist": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
       "datePublished": "2024-06-27",
       "description": "«Amore Quantico» immagina l’amore come fisica quantistica: non vero/falso ma un’onda di probabilità della passione. Tra synth graffianti, groove downbeat, voce femminile francese, chitarre elettriche ed elementi orchestrali, le liriche giocano con entanglement, indeterminazione, AI e multiverso, fino a parafrasare il “Dio non gioca a dadi” di Einstein.",
       "url": "https://open.spotify.com/track/4E8nmKbzyTV0O3xwfhQpwC",
@@ -491,13 +647,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Amore Quantico — Press Release",
+          "name": "Amore Quantico - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/01-press-release-amore-quantico-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Amore Quantico — Lyrics",
+          "name": "Amore Quantico - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/01-lyrics-amore-quantico-arnaldo-furioso.pdf"
         }
@@ -924,22 +1080,22 @@
 <pre><span class="k">name</span>: <span class="v">Arnaldo Furioso</span>
 <span class="k">roles</span>: [<span class="v">singer-songwriter</span>, <span class="v">producer</span>, <span class="v">performer</span>, <span class="v">radio/tv host</span>]
 <span class="k">concept</span>: <span class="v">"Canzoni contro le (stronze) leggi del cosmo"</span>
-<span class="k">statement</span>: <span class="v">"Canti di ribellione umana contro le leggi universali che pretendono di governare amore, tempo, sesso, dolore e libertà."</span>
+<span class="k">statement</span>: <span class="v">"Un canzoniere pop che trasforma le storture dell’amore, del corpo, del linguaggio e del vivere in atti di insubordinazione contro l’ordine del cosmo."</span>
 
 <span class="k">bio_tags</span>:
-  - <span class="g">cantautorato contemporaneo</span>
-  - <span class="g">pop elettronico d’autore</span>
+  - <span class="g">pop d’autore ibrido e modulare</span>
+  - <span class="g">elettronica + teatro-canzone</span>
   - <span class="g">epica del quotidiano</span>
-  - <span class="g">canti di ribellione contro il cosmo</span>
-  - <span class="g">fragilità umana come resistenza</span>
+  - <span class="g">narrazione musicale seriale</span>
+  - <span class="g">canzone come forma centrale</span>
   - <span class="g">ironia come autodifesa</span>
 
 <span class="k">bio</span>: |
-  <span class="v">Cantautore, producer e conduttore radio-televisivo.</span>
-  <span class="v">Epica del quotidiano + paradossi del vivere.</span>
-  <span class="v">Ogni singolo = mondo autonomo (estetica/suono/bersaglio).</span>
-  <span class="v">Contrasti: violoncello ↔ synth ↔ radici techno ↔ pop rock ↔ impulso teatrale.</span>
-  <span class="v">Rifiuta etichette di genere musicale: preferisce discriminare le emozioni.</span>
+  <span class="v">Cantautore, producer, performer e conduttore radio-televisivo.</span>
+  <span class="v">Scrive canzoni pop contro le (stronze) leggi del cosmo.</span>
+  <span class="v">Ogni singolo = episodio autonomo di un unico concept narrativo.</span>
+  <span class="v">Contrasti: violoncello ↔ synth ↔ TR-909 ↔ chitarre ↔ teatro-canzone.</span>
+  <span class="v">I generi cambiano forma; al centro resta sempre la Canzone.</span>
 </pre>
         </div>
       </div>
@@ -949,7 +1105,7 @@
 <section class="panel">
   <div class="hdr">
     <div class="t">VIDEOOBJECT INDEX</div>
-    <div class="s">platform:youtube · count:3</div>
+    <div class="s">platform:youtube · count:4</div>
   </div>
 
   <div class="body">
@@ -963,8 +1119,8 @@
 
     <div class="frame">
       <iframe
-        src="https://www.youtube-nocookie.com/embed/efp8pOFnEJ0?rel=0&modestbranding=1"
-        title="AHI — mini"
+        src="https://www.youtube-nocookie.com/embed/kqka6rbLVDM?rel=0&modestbranding=1"
+        title="Finché sei viva — mini"
         loading="lazy"
         referrerpolicy="strict-origin-when-cross-origin"
         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -980,6 +1136,10 @@
       <!-- code SECOND -->
       <div class="code">
 <pre><span class="k">videos</span>:
+- <span class="k">id</span>: <span class="v">urn:arnaldo-furioso:video-finche-sei-viva</span>
+  <a class="a" href="https://www.youtube.com/watch?v=kqka6rbLVDM" target="_blank">Finché sei viva — Official Video</a>
+  <span class="k">url</span>: <a class="a" href="https://www.youtube.com/watch?v=kqka6rbLVDM" target="_blank">/watch?v=kqka6rbLVDM</a>
+
 - <span class="k">id</span>: <span class="v">urn:arnaldo-furioso:video-ahi</span>
   <a class="a" href="https://www.youtube.com/watch?v=efp8pOFnEJ0" target="_blank">AHI – Arnaldo Furioso | One Take</a>
   <span class="k">url</span>: <a class="a" href="https://www.youtube.com/watch?v=efp8pOFnEJ0" target="_blank">/watch?v=efp8pOFnEJ0</a>
@@ -988,7 +1148,7 @@
   <a class="a" href="https://www.youtube.com/watch?v=4ENXjGbqhxA" target="_blank">Butto la plastica (io rivendico il mare)</a>
   <span class="k">url</span>: <a class="a" href="https://www.youtube.com/watch?v=4ENXjGbqhxA" target="_blank">/watch?v=4ENXjGbqhxA</a>
 
-- <span class="k">id</span>: <span class="v">urn:arnaldo-furioso:video-odio</span>
+- <span class="k">id</span>: <span class="v">urn:arnaldo-furioso:video-consecutio</span>
   <a class="a" href="https://www.youtube.com/watch?v=8fJkhxKuumE" target="_blank">Odio la consecutio temporum (Milo Vallone)</a>
   <span class="k">url</span>: <a class="a" href="https://www.youtube.com/watch?v=8fJkhxKuumE" target="_blank">/watch?v=8fJkhxKuumE</a>
 </pre>
@@ -1003,10 +1163,36 @@
 <section class="panel">
   <div class="hdr">
     <div class="t">MUSICRECORDING INDEX</div>
-    <div class="s">count:6 · stores[]</div>
+    <div class="s">count:7 · stores[]</div>
   </div>
   <div class="body">
     <div class="records">
+
+      <article class="rec">
+        <a href="https://open.spotify.com/track/6jx1audxPzpsOnqH67GdbZ" target="_blank" aria-label="Finché sei viva Spotify">
+          <img src="./img/covers/cover-finche-sei-viva.jpg" alt="Finché sei viva cover" />
+        </a>
+        <div class="name">Finché sei viva</div>
+        <div class="moods">
+          <span class="tag mood">Energetic</span>
+          <span class="tag mood">Fierce</span>
+          <span class="tag mood">Quirky</span>
+          <span class="tag genre">Electropop</span>
+          <span class="tag genre">Funk Pop</span>
+          <span class="tag genre">Art Pop</span>
+        </div>
+        <div class="desc">Electropop funky a 130 BPM: basso disco, chitarre wah-wah, synth nervosi e coro vocoder. Il rischio di vivere e la bugia del «tutto bene» diventano un funeral party vitale e ballabile.</div>
+        <div class="stores">
+          <span class="dim">stores:</span>
+          <a href="https://open.spotify.com/track/6jx1audxPzpsOnqH67GdbZ" target="_blank">spotify</a>
+          <a href="https://music.apple.com/it/album/finch%C3%A9-sei-viva-single/6768708254" target="_blank">apple</a>
+          <a href="https://music.amazon.it/albums/B0H1JTFRP3" target="_blank">amazon</a>
+        </div>
+        <div class="docs">
+          <a href="./docs/07-lyrics-finche-sei-viva-arnaldo-furioso.pdf" target="_blank">lyrics:pdf</a>
+          <a href="./docs/07-press-release-finche-sei-viva-arnaldo-furioso.pdf" target="_blank">press-release:pdf</a>
+        </div>
+      </article>
 
       <article class="rec">
         <a href="https://open.spotify.com/track/5Oe9SFgdoHS8Pk9W20vAWY" target="_blank" aria-label="AHI Spotify">
@@ -1166,7 +1352,7 @@
 <pre><span class="k">sameAs</span>:
   - <a class="a" href="https://instagram.com/arnaldofurioso" target="_blank">https://instagram.com/arnaldofurioso</a>
   - <a class="a" href="https://www.youtube.com/@arnaldofurioso" target="_blank">https://youtube.com/@arnaldofurioso</a>
-  - <a class="a" href="https://open.spotify.com/intl-it/artist/2jrGyOMUhLBczGbgvh6MgL" target="_blank">https://open.spotify.com/intl-it/artist/2jrGyOMUhLBczGbgvh6MgL</a>
+  - <a class="a" href="https://open.spotify.com/artist/2jrGyOMUhLBczGbgvh6MgL" target="_blank">https://open.spotify.com/artist/2jrGyOMUhLBczGbgvh6MgL</a>
   - <a class="a" href="https://www.facebook.com/arnaldoguido" target="_blank">https://facebook.com/arnaldoguido</a>
   - <a class="a" href="https://www.tiktok.com/@arnaldofurioso" target="_blank">https://tiktok.com/@arnaldofurioso</a>
   - <a class="a" href="https://music.apple.com/us/artist/arnaldo-furioso/1750937018" target="_blank">music.apple.com/us/artist/arnaldo-furioso/1750937018</a>

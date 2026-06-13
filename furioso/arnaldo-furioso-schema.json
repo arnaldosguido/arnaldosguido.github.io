@@ -6,8 +6,15 @@
       "@id": "https://musicaitaliana.com/furioso/",
       "url": "https://musicaitaliana.com/furioso/",
       "name": "Arnaldo Furioso",
-      "description": "Sito ufficiale di Arnaldo Furioso, cantautore e performer italiano. Identità artistica e progetto concettuale.",
-      "mainEntity": { "@id": "urn:arnaldo-furioso:person" }
+      "description": "Sito ufficiale di Arnaldo Furioso, cantautore, producer e performer. Biografia, singoli, video e materiali del progetto «Canzoni contro le (stronze) leggi del cosmo», tra pop d’autore ibrido, elettronica e teatro-canzone.",
+      "mainEntity": [
+        {
+          "@id": "urn:arnaldo-furioso:person"
+        },
+        {
+          "@id": "urn:arnaldo-furioso:concept"
+        }
+      ]
     },
     {
       "@type": "Person",
@@ -20,43 +27,55 @@
         "Performer",
         "Conduttore radio-televisivo"
       ],
-      "description": "Arnaldo Furioso è un cantautore, producer e conduttore radio-televisivo. Scrive brani che attraversano l’epica del quotidiano e i paradossi del vivere con un’ironia che non fa sconti.",
-      "disambiguatingDescription": "Un cantautorato contemporaneo che non si ripete: ogni singolo è un mondo distinto, con un’estetica diversa e un suono specifico. Lavora per contrasti: il minimalismo di un violoncello convive con synth elettronici, radici techno, pop rock stratificato e un impulso teatrale. Rifiuta ogni etichetta di genere musicale e preferisce discriminare le emozioni.",
-      "knowsAbout": [
-        "contemporary singer-songwriter",
-        "italian singer-songwriter tradition",
-        "alternative pop",
-        "indie pop songwriting",
-        "author-driven electronic music",
-        "electronic pop songwriting",
-        "synthwave influences",
-        "art pop aesthetics",
-        "theatrical songwriting",
-        "performative music",
-        "songwriting as confession",
-        "song as irreversible act",
-        "narrative music without resolution",
-        "voice-centered songwriting",
-        "minimal and hybrid arrangements",
-        "love interpreted through scientific metaphors",
-        "quantum physics as emotional language",
-        "sexuality as power and control",
-        "desire and emotional dependency",
-        "time as a linguistic and cultural construct",
-        "language as a tool of domination",
-        "pain without redemption",
-        "fragility and resistance",
-        "freedom versus attachment",
-        "emotional environmentalism",
-        "microplastics and social pollution",
-        "algorithmic alienation",
-        "intimacy in the age of systems",
-        "irony as self-defense",
-        "non-consolatory songwriting"
-      ],
+      "description":"Arnaldo Furioso scrive canzoni pop contro le (stronze) leggi del cosmo. Cantautore, producer e conduttore radio-televisivo, costruisce un pop d’autore ibrido e modulare che attraversa elettronica, teatro-canzone e tradizione italiana, raccontando l’epica del quotidiano e i paradossi del vivere con un’ironia che non fa sconti.",
+      "disambiguatingDescription": "Arnaldo Furioso fa pop d’autore contemporaneo, ibrido e modulare: ogni singolo, con un’estetica e un suono propri, è un episodio del concept «Canzoni contro le (stronze) leggi del cosmo». Lavora per contrasti: il minimalismo di un violoncello convive con synth elettronici, TR-909, chitarre vere, radici techno, pop rock stratificato e un impulso teatrale. I generi si combinano e cambiano forma, ma al centro resta sempre sua maestà la Canzone.",
+
+    "knowsAbout": [
+      "italian singer-songwriter tradition",
+      "contemporary pop songwriting",
+      "alternative pop",
+      "art pop aesthetics",
+      "electronic pop songwriting",
+      "author-driven electronic music",
+      "synthwave influences",
+      "theatrical songwriting",
+      "performative music",
+      "hybrid and modular songwriting",
+      "multi-genre song structures",
+      "genre shifts within songs",
+      "contrasting musical arrangements",
+      "narrative song architecture",
+      "concept-driven singles",
+      "serial musical storytelling",
+      "song as the central artistic form",
+      "songwriting as confession",
+      "song as irreversible act",
+      "narrative music without resolution",
+      "voice-centered songwriting",
+      "non-consolatory songwriting",
+      "irony as self-defense",
+      "love interpreted through scientific metaphors",
+      "quantum physics as emotional language",
+      "sexuality as power and control",
+      "desire and emotional dependency",
+      "language as a tool of domination",
+      "time as a linguistic and cultural construct",
+      "pain and impossible lightness",
+      "fragility and resistance",
+      "freedom versus attachment",
+      "emotional environmentalism",
+      "microplastics and social pollution",
+      "algorithmic alienation",
+      "intimacy in the age of systems",
+      "existential irony",
+      "the epic of everyday life"
+    ],
       "subjectOf": [
         {
           "@id": "urn:arnaldo-furioso:concept"
+        },
+        {
+          "@id": "urn:arnaldo-furioso:video-finche-sei-viva"
         },
         {
           "@id": "urn:arnaldo-furioso:video-ahi"
@@ -80,7 +99,7 @@
       "sameAs": [
         "https://instagram.com/arnaldofurioso",
         "https://www.youtube.com/@arnaldofurioso",
-        "https://open.spotify.com/intl-it/artist/2jrGyOMUhLBczGbgvh6MgL",
+        "https://open.spotify.com/artist/2jrGyOMUhLBczGbgvh6MgL",
         "https://www.facebook.com/arnaldoguido",
         "https://www.tiktok.com/@arnaldofurioso",
         "https://music.apple.com/us/artist/arnaldo-furioso/1750937018",
@@ -93,21 +112,21 @@
           "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-portrait-1x1.jpg",
           "width": 1440,
           "height": 1440,
-          "caption": "Arnaldo Furioso — Portrait"
+          "caption": "Arnaldo Furioso - Portrait"
         },
         {
           "@type": "ImageObject",
           "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-theatrical-16x9.png",
           "width": 2048,
           "height": 1152,
-          "caption": "Arnaldo Furioso — Theatrical performance"
+          "caption": "Arnaldo Furioso - Theatrical performance"
         },
         {
           "@type": "ImageObject",
           "url": "https://musicaitaliana.com/furioso/img/arnaldo-furioso-cinematic-1x1.png",
           "width": 2160,
           "height": 2160,
-          "caption": "Arnaldo Furioso — Cinematic performance"
+          "caption": "Arnaldo Furioso - Cinematic performance"
         }
       ]
     },
@@ -118,9 +137,31 @@
       "creator": {
         "@id": "urn:arnaldo-furioso:person"
       },
-      "description": "Progetto narrativo musicale ideato da Arnaldo Furioso. Non una discografia ma una collezione di opere autonome. Ogni brano è una ribellione contro le logiche prevedibili dell’esistenza.",
-      "abstract": "Canti di ribellione umana contro le leggi universali che pretendono di governare amore, tempo, sesso, dolore e libertà.",
+      "description": "Una serie narrativa di canzoni pop, ciascuna con un’estetica e un suono propri, parte di una stessa ribellione contro le leggi che il cosmo pretende di imporci.",
+      "abstract": "Un canzoniere pop che trasforma le storture dell’amore, del corpo, del linguaggio e del vivere in atti di insubordinazione contro l’ordine del cosmo.",
+      "genre": [
+        "Hybrid Pop",
+        "Art Pop",
+        "Electronic Pop",
+        "Italian Singer-Songwriter"
+      ],
+      "keywords": [
+      "canzoni contro le stronze leggi del cosmo",
+      "hybrid pop",
+      "modular songwriting",
+      "multi-genre songwriting",
+      "narrative songwriting",
+      "serial musical storytelling",
+      "concept-driven singles",
+      "theatrical pop",
+      "italian songwriting",
+      "existential irony",
+      "non-consolatory songwriting"
+      ],
       "hasPart": [
+        {
+          "@id": "urn:arnaldo-furioso:track-finche-sei-viva"
+        },
         {
           "@id": "urn:arnaldo-furioso:track-ahi"
         },
@@ -128,10 +169,10 @@
           "@id": "urn:arnaldo-furioso:track-plastica"
         },
         {
-          "@id": "urn:arnaldo-furioso:track-libero"
+          "@id": "urn:arnaldo-furioso:track-consecutio"
         },
         {
-          "@id": "urn:arnaldo-furioso:track-consecutio"
+          "@id": "urn:arnaldo-furioso:track-libero"
         },
         {
           "@id": "urn:arnaldo-furioso:track-copriti"
@@ -140,8 +181,23 @@
           "@id": "urn:arnaldo-furioso:track-amore-quantico"
         }
       ],
+
       "inLanguage": "it"
     },
+    {
+      "@type": "VideoObject",
+      "@id": "urn:arnaldo-furioso:video-finche-sei-viva",
+      "name": "Finché sei viva - Official Video",
+      "description": "Arnaldo Furioso canta e suona da vivo dentro una bara. Un funeral party electropop e funky sul rischio incorporato nel vivere e sulla bugia quotidiana del «tutto bene».",
+      "creator": {
+        "@id": "urn:arnaldo-furioso:person"
+      },
+      "url": "https://www.youtube.com/watch?v=kqka6rbLVDM",
+      "embedUrl": "https://www.youtube.com/embed/kqka6rbLVDM",
+      "thumbnailUrl": "https://img.youtube.com/vi/kqka6rbLVDM/maxresdefault.jpg",
+      "uploadDate": "2026-06-05T15:00:00+02:00"
+    },
+
     {
       "@type": "VideoObject",
       "@id": "urn:arnaldo-furioso:video-ahi",
@@ -175,8 +231,70 @@
       "thumbnailUrl": "https://img.youtube.com/vi/8fJkhxKuumE/maxresdefault.jpg",
       "uploadDate": "2024-12-13T00:00:00+01:00"
     },
+
+      {
+      "@type": "MusicRecording",
+      "isPartOf": {"@id": "urn:arnaldo-furioso:concept" },
+      "@id": "urn:arnaldo-furioso:track-finche-sei-viva",
+      "name": "Finché sei viva",
+      "byArtist": {"@id": "urn:arnaldo-furioso:person"},
+      "datePublished": "2026-06-05",
+      "url": "https://open.spotify.com/track/6jx1audxPzpsOnqH67GdbZ",
+      "description": "«Finché sei viva» è un electropop con venature funky a 130 BPM: basso disco, chitarre wah-wah, synth nervosi e un coro vocoder che canta «alive ain’t safe». Il brano trasforma il rischio incorporato nel vivere e la bugia quotidiana del «tutto bene» in un funeral party fisico, vitale e ballabile.",
+      "genre": [
+      "Electropop",
+      "Funk Pop",
+      "Art Pop"
+      ],
+      "mood": [
+      "Energetic",
+      "Fierce",
+      "Quirky"
+      ],
+      "keywords": [
+      "risk of being alive",
+      "funeral party",
+      "everything is fine",
+      "alive ain't safe",
+      "funk bass",
+      "wah-wah guitars",
+      "vocoder chorus",
+      "coffin performance",
+      "existential pop",
+      "danceable mortality"
+      ],
+      "image": {
+      "@type": "ImageObject",
+      "url": "https://musicaitaliana.com/furioso/img/covers/cover-finche-sei-viva.jpg"
+      },
+      "associatedMedia": {
+      "@id": "urn:arnaldo-furioso:video-finche-sei-viva"
+      },
+      "sameAs": [
+      "https://open.spotify.com/track/6jx1audxPzpsOnqH67GdbZ",
+      "https://music.apple.com/it/album/finch%C3%A9-sei-viva-single/6768708254",
+      "https://music.amazon.it/albums/B0H1JTFRP3"
+      ],
+      "subjectOf": [
+      {
+      "@type": "CreativeWork",
+      "name": "Finché sei viva - Press Release",
+      "fileFormat": "application/pdf",
+      "url": "https://musicaitaliana.com/furioso/docs/07-press-release-finche-sei-viva-arnaldo-furioso.pdf"
+      },
+      {
+      "@type": "CreativeWork",
+      "name": "Finché sei viva - Lyrics",
+      "fileFormat": "application/pdf",
+      "url": "https://musicaitaliana.com/furioso/docs/07-lyrics-finche-sei-viva-arnaldo-furioso.pdf"
+      }
+      ]
+      }
+      ,
+
     {
       "@type": "MusicRecording",
+      "isPartOf": {"@id": "urn:arnaldo-furioso:concept" },
       "@id": "urn:arnaldo-furioso:track-ahi",
       "name": "AHI",
       "byArtist": { "@id": "urn:arnaldo-furioso:person" },
@@ -214,13 +332,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "AHI — Press Release",
+          "name": "AHI - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/06-press-release-ahi-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "AHI — Lyrics",
+          "name": "AHI - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/06-lyrics-ahi-arnaldo-furioso.pdf"
         }
@@ -229,6 +347,7 @@
 
     {
       "@type": "MusicRecording",
+      "isPartOf": {"@id": "urn:arnaldo-furioso:concept" },
       "@id": "urn:arnaldo-furioso:track-plastica",
       "name": "Butto la plastica (io rivendico il mare)",
       "byArtist": { "@id": "urn:arnaldo-furioso:person" },
@@ -265,13 +384,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Butto la plastica (io rivendico il mare) — Press Release",
+          "name": "Butto la plastica (io rivendico il mare) - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/05-press-release-butto-la-plastica-io-rivendico-il-mare-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Butto la plastica (io rivendico il mare) — Lyrics",
+          "name": "Butto la plastica (io rivendico il mare) - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/05-lyrics-butto-la-plastica-io-rivendico-il-mare-arnaldo-furioso.pdf"
         }
@@ -279,6 +398,7 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {"@id": "urn:arnaldo-furioso:concept" },
       "@id": "urn:arnaldo-furioso:track-libero",
       "name": "Libero Dal…",
       "byArtist": { "@id": "urn:arnaldo-furioso:person" },
@@ -313,13 +433,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Libero Dal… — Press Release",
+          "name": "Libero Dal… - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/03-press-release-libero-dal-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Libero Dal… — Lyrics",
+          "name": "Libero Dal… - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/03-lyrics-libero-dal-arnaldo-furioso.pdf"
         }
@@ -327,6 +447,7 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {"@id": "urn:arnaldo-furioso:concept" },
       "@id": "urn:arnaldo-furioso:track-consecutio",
       "name": "Odio la consecutio temporum",
       "byArtist": { "@id": "urn:arnaldo-furioso:person" },
@@ -364,13 +485,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Odio la consecutio temporum — Press Release",
+          "name": "Odio la consecutio temporum - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/04-press-release-odio-la-consecutio-temporum-arnaldo-furioso-feat-milo-vallone.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Odio la consecutio temporum — Lyrics",
+          "name": "Odio la consecutio temporum - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/04-lyrics-odio-la-consecutio-temporum-arnaldo-furioso-feat-milo-vallone.pdf"
         }
@@ -378,6 +499,7 @@
     },
     {
       "@type": "MusicRecording",
+      "isPartOf": {"@id": "urn:arnaldo-furioso:concept" },
       "@id": "urn:arnaldo-furioso:track-copriti",
       "name": "Copriti chè ho freddo",
       "byArtist": { "@id": "urn:arnaldo-furioso:person" },
@@ -414,20 +536,21 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Copriti chè ho freddo — Press Release",
+          "name": "Copriti chè ho freddo - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/02-press-release-copriti-che-ho-freddo-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Copriti chè ho freddo — Lyrics",
+          "name": "Copriti chè ho freddo - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/02-lyrics-copriti-che-ho-freddo-arnaldo-furioso.pdf"
         }
       ]
     },
     {
-      "@type": "MusicRecording",
+       "@type": "MusicRecording",
+      "isPartOf": {"@id": "urn:arnaldo-furioso:concept" },
       "@id": "urn:arnaldo-furioso:track-amore-quantico",
       "name": "Amore Quantico",
       "byArtist": { "@id": "urn:arnaldo-furioso:person" },
@@ -463,13 +586,13 @@
       "subjectOf": [
         {
           "@type": "CreativeWork",
-          "name": "Amore Quantico — Press Release",
+          "name": "Amore Quantico - Press Release",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/01-press-release-amore-quantico-arnaldo-furioso.pdf"
         },
         {
           "@type": "CreativeWork",
-          "name": "Amore Quantico — Lyrics",
+          "name": "Amore Quantico - Lyrics",
           "fileFormat": "application/pdf",
           "url": "https://musicaitaliana.com/furioso/docs/01-lyrics-amore-quantico-arnaldo-furioso.pdf"
         }

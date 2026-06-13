@@ -52,5 +52,5 @@ All schema entities use URN identifiers of the form `urn:arnaldo-furioso:<type>-
 | `index.html` | Single-page UI + embedded CSS + fetch script |
 | `arnaldo-furioso-schema.json` | Schema.org structured data (source of truth for metadata) |
 | `ai-policy.txt` | Machine-usage policy (referenced in `<head>` via `rel="policy"`) |
-| `docs/` | 12 PDFs: lyrics + press releases, one pair per track |
+| `docs/` | 14 PDFs: lyrics + press releases, one pair per track |
 | `img/covers/` | One cover image per song |
